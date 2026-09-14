@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {blockMaterial,blockStateSchema,boundsSchema,checkBounds,policySchema,volume} from '../tool-schemas/index.js';
+import {blockMaterial,blockStateSchema,boundsSchema,checkBounds,policySchema,schemas,volume} from '../tool-schemas/index.js';
 import {room} from '../build-primitives/index.js';
 import {library,place,transformBlockState,weighted} from '../build-primitives/modules.js';
 import {detailPass} from '../build-primitives/detail.js';
@@ -18,6 +18,12 @@ test('inclusive bounds and protected boundary contact',()=>{
   assert.throws(()=>checkBounds(policy,{min:[0,96,0],max:[31,127,31]},true),/VOLUME/);
   assert.throws(()=>boundsSchema.parse({min:[5,100,0],max:[4,100,0]}));
   assert.throws(()=>checkBounds(policy,{min:[-1,100,0],max:[0,100,0]},true),/OUTSIDE/);
+});
+test('observer avatar schema only accepts canonical map identities and camera-shaped IDs',()=>{
+  assert.deepEqual(schemas['observer.get_state'].parse({actor:'test',prompt:'inspect'}),{actor:'test',prompt:'inspect'});
+  assert.equal(schemas['observer.place'].parse({actor:'test',prompt:'place',mapId:'three-oh-seven',cameraId:'three07-phone'}).cameraId,'three07-phone');
+  assert.throws(()=>schemas['observer.place'].parse({actor:'test',prompt:'place',mapId:'other-map',cameraId:'x'}));
+  assert.throws(()=>schemas['observer.place'].parse({actor:'test',prompt:'place',mapId:'three-oh-seven',cameraId:'camera with spaces'}));
 });
 test('creative detail passes are deterministic, bounded and materially varied',()=>{
   const detailed=library().filter(m=>detailPass(m).length>0);assert.equal(detailed.length,8);

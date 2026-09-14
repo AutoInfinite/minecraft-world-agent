@@ -35,6 +35,7 @@ public final class WorldAgentPlugin extends JavaPlugin implements Listener {
     private boolean recoveryBlocked;
     private AdventureRuntime adventure;
     private ThreeOhSevenRuntime threeOhSeven;
+    private ObserverAvatar observer;
     private final Map<String,String> activeMaps = new LinkedHashMap<>();
     record Bounds(int[] min, int[] max) {
         long volume() { return ((long)max[0]-min[0]+1)*((long)max[1]-min[1]+1)*((long)max[2]-min[2]+1); }
@@ -76,13 +77,14 @@ public final class WorldAgentPlugin extends JavaPlugin implements Listener {
             http.start();
             if(Files.exists(directory.resolve("world-model.json")))adventure=new AdventureRuntime(this);
             if(Files.exists(directory.resolve("three-oh-seven-world.json")))threeOhSeven=new ThreeOhSevenRuntime(this);
+            if(Files.exists(directory.resolve("world-model.json"))&&Files.exists(directory.resolve("three-oh-seven-world.json")))observer=new ObserverAvatar(this);
             getServer().getPluginManager().registerEvents(this,this);
             int removed=removeAmbientHostiles(world().getEntities().toArray(Entity[]::new));
             if(removed>0)getLogger().info("Removed "+removed+" leftover ambient hostile mob(s)");
             getLogger().info("Authenticated bridge on 127.0.0.1:"+policy.port+"; recoveryBlocked="+recoveryBlocked);
         } catch(Exception e) { getLogger().log(java.util.logging.Level.SEVERE,"Bridge startup failed",e);getServer().getPluginManager().disablePlugin(this); }
     }
-    @Override public void onDisable() { try{if(threeOhSeven!=null)threeOhSeven.close();if(adventure!=null)adventure.close();saveActiveMaps();}finally{if(http!=null)http.stop(0); if(executor!=null)executor.shutdownNow();} }
+    @Override public void onDisable() { try{if(observer!=null)observer.close();if(threeOhSeven!=null)threeOhSeven.close();if(adventure!=null)adventure.close();saveActiveMaps();}finally{if(http!=null)http.stop(0); if(executor!=null)executor.shutdownNow();} }
     String activeMap(Player player){return activeMaps.get(player.getUniqueId().toString());}
     boolean isActive(Player player,String mapId){return mapId.equals(activeMap(player));}
     void setActiveMap(Player player,String mapId){activeMaps.put(player.getUniqueId().toString(),mapId);saveActiveMaps();}
@@ -143,7 +145,7 @@ public final class WorldAgentPlugin extends JavaPlugin implements Listener {
         // Display/Interaction entities are plugin-owned world prompts. Block fills cannot mutate
         // them, while players and living entities still make a transaction fail closed.
         boolean occupied=world().getNearbyEntities(new BoundingBox(b.min[0],b.min[1],b.min[2],b.max[0]+1,b.max[1]+1,b.max[2]+1))
-            .stream().anyMatch(e->!(e instanceof org.bukkit.entity.Display)&&!(e instanceof org.bukkit.entity.Interaction));
+            .stream().anyMatch(e->!(e instanceof org.bukkit.entity.Display)&&!(e instanceof org.bukkit.entity.Interaction)&&(observer==null||!observer.owns(e)));
         if(occupied)throw new IllegalArgumentException("REGION_OCCUPIED: entities are outside block snapshot coverage");
     }
     private String hash(Object value){try{return HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(gson.toJson(value).getBytes(StandardCharsets.UTF_8)));}catch(Exception e){throw new IllegalStateException(e);}}
@@ -163,7 +165,7 @@ public final class WorldAgentPlugin extends JavaPlugin implements Listener {
         if(old!=null){if(!old.fingerprint.equals(fingerprint))throw new IllegalArgumentException("REQUEST_ID_REUSED_WITH_DIFFERENT_PAYLOAD");return old.response;}
         JsonObject response;
         try{
-            if(recoveryBlocked && !Set.of("world.get_summary","world.get_blocks","world.get_entities","world.get_change_history").contains(tool))throw new IllegalStateException("RECOVERY_REQUIRED: interrupted write; stop server and review ledger before recovery");
+            if(recoveryBlocked && !Set.of("world.get_summary","world.get_blocks","world.get_entities","world.get_change_history","observer.get_state").contains(tool))throw new IllegalStateException("RECOVERY_REQUIRED: interrupted write; stop server and review ledger before recovery");
             response=execute(tool,a,r);response.addProperty("ok",true);
         }catch(IllegalArgumentException|IllegalStateException e){response=error(e.getMessage());}
         catch(Exception e){recoveryBlocked=true;throw new IllegalStateException("STORAGE_OR_WORLD_FAILURE: bridge locked for review",e);}
@@ -178,6 +180,8 @@ public final class WorldAgentPlugin extends JavaPlugin implements Listener {
         switch(tool){
             case "gameplay.get_state" -> {if(adventure==null)throw new IllegalStateException("GAMEPLAY_NOT_DEPLOYED");JsonObject village=adventure.inspect(a.has("playerId")?string(a,"playerId"):null);for(var entry:village.entrySet())out.add(entry.getKey(),entry.getValue().deepCopy());if(threeOhSeven!=null)out.add("threeOhSeven",threeOhSeven.inspect(a.has("playerId")?string(a,"playerId"):null));}
             case "gameplay.run_self_test" -> {if(adventure==null)throw new IllegalStateException("GAMEPLAY_NOT_DEPLOYED");JsonObject village=adventure.selfTest();for(var entry:village.entrySet())out.add(entry.getKey(),entry.getValue().deepCopy());if(threeOhSeven!=null)out.add("threeOhSeven",threeOhSeven.selfTest());}
+            case "observer.get_state" -> {if(observer==null)throw new IllegalStateException("OBSERVER_NOT_DEPLOYED");observer.ensure();out=observer.inspect();}
+            case "observer.place" -> {if(observer==null)throw new IllegalStateException("OBSERVER_NOT_DEPLOYED");out=observer.place(string(a,"mapId"),string(a,"cameraId"));}
             case "world.get_summary" -> {out.addProperty("server",getServer().getVersion());out.addProperty("world",world().getName());out.addProperty("worldedit",getServer().getPluginManager().getPlugin("WorldEdit").getPluginMeta().getVersion());out.add("policy",gson.toJsonTree(policy));out.addProperty("recoveryBlocked",recoveryBlocked);}
             case "world.get_blocks" -> {Bounds b=bounds(a);var blocks=read(b,false);out.add("bounds",gson.toJsonTree(b));out.add("blocks",gson.toJsonTree(blocks));out.addProperty("checksum",hash(blocks));}
             case "world.get_entities" -> out.add("entities",entities(bounds(a)));

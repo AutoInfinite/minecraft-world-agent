@@ -14,6 +14,8 @@ export const blockMaterial=(state:string)=>state.split('[',1)[0];
 export const schemas={
   'gameplay.get_state':z.object({...meta,playerId:z.uuid().optional()}).strict(),
   'gameplay.run_self_test':z.object({...meta}).strict(),
+  'observer.get_state':z.object({...meta}).strict(),
+  'observer.place':z.object({...meta,mapId:z.enum(['abandoned-mine','three-oh-seven']),cameraId:z.string().min(1).max(120).regex(/^[a-z0-9-]+$/)}).strict(),
   'world.get_summary':z.object({...meta}).strict(),
   'world.get_blocks':z.object({...meta,bounds:boundsSchema}).strict(),
   'world.get_entities':z.object({...meta,bounds:boundsSchema}).strict(),

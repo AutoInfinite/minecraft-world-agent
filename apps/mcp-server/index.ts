@@ -7,6 +7,8 @@ import {registerAuthoring} from './authoring.js';
 const descriptions:Record<ToolName,string>={
   'gameplay.get_state':'Inspect persisted player progression and current boss phase.',
   'gameplay.run_self_test':'Test canonical Java progression and file persistence on the plugin. Does not simulate a real Minecraft player or test listeners.',
+  'observer.get_state':'Read the visible server-side Codex Observer avatar. This avatar is not an authenticated Minecraft player and has no renderer.',
+  'observer.place':'Move the server-side Codex Observer avatar to one canonical saved camera. It cannot use arbitrary coordinates or player commands.',
   'world.get_summary':'Read server versions and active build policy.',
   'world.get_blocks':'Read every block state in a bounded region, with SHA-256 checksum.',
   'world.get_entities':'Read bounded entities; no mutation.',
@@ -25,7 +27,7 @@ try{
   const bridge=await Bridge.connect();
   const server=new McpServer({name:'minecraft-world-agent',version:'0.1.0'});
   for(const name of Object.keys(schemas) as ToolName[]){
-    server.registerTool(name,{description:descriptions[name],inputSchema:schemas[name],annotations:{readOnlyHint:name.startsWith('world.'),destructiveHint:name==='build.commit_transaction'||name==='build.undo'||name==='build.rollback_transaction',openWorldHint:false}},async (args:unknown):Promise<CallToolResult>=>{
+    server.registerTool(name,{description:descriptions[name],inputSchema:schemas[name],annotations:{readOnlyHint:name.startsWith('world.')||name==='observer.get_state',destructiveHint:name==='build.commit_transaction'||name==='build.undo'||name==='build.rollback_transaction',openWorldHint:false}},async (args:unknown):Promise<CallToolResult>=>{
       try{return {content:[{type:'text',text:JSON.stringify(await bridge.call(name,args))}]};}
       catch(e){return {isError:true,content:[{type:'text',text:e instanceof Error?e.message:String(e)}]};}
     });

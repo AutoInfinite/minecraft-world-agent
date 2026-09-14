@@ -28,7 +28,7 @@ Snapshots restore inert block data, including orientation; unsupported existing 
 ## Required remaining work
 
 1. Actual client playthrough of intro → NPC → clue → puzzle → checkpoint → boss → ending, including real death/respawn listeners, restart and two-player synchronization. The manual form remains NOT RUN.
-2. Fabric observer and automatic before/after renderer capture. Operator-only saved camera teleport/yaw/pitch/time/weather is implemented; FOV/HUD/F2 capture remains manual. A user supplied a manual `3:07` screenshot set, which informed the first art pass; no screenshot was invented and the post-change view still needs review.
+2. Fabric renderer client and automatic before/after capture. A server-side Codex avatar can now move between declared cameras without an account, but it has no renderer. Operator-only saved camera teleport/yaw/pitch/time/weather is implemented; FOV/HUD/F2 capture remains manual. A user supplied a manual `3:07` screenshot set, which informed the first art pass; no screenshot was invented and the post-change view still needs review.
 3. Organic terrain, convincing elevation descent, a separate ambush, richer environmental puzzle and balancing to the target 15–20 minutes. Architecture and arena composition have a stronger live pass, but the surrounding world datum and connectors remain mostly flat.
 4. Sponge .schem import/export, richer decoration/damage/vegetation passes and generic quest/encounter authoring. Current reusable structures are actual JSON recipes.
 5. Wider collision/jump QA, client resource-pack validation and one full human playthrough without developer intervention. Current geometric QA is four-neighbor standing-player walking, not every sequence break.
@@ -76,7 +76,7 @@ The rebuilt plugin and updated model were activated by a graceful Paper restart 
 
 A second isolated solo horror prototype, `3:07`, now has a canonical nine-region/eight-route semantic model, a deterministic transaction-safe build plan and a dedicated Paper gameplay runtime. The actual world build passed staged preview-hash commits and live reconciliation across 11 bounded batches. Twelve authored route checkpoints have solid footing and two-block clearance; exterior route and stair-continuity QA pass. Evidence: `reports/three-oh-seven-build.json` and `reports/three-oh-seven-qa.json`.
 
-The current TypeScript unit suite passes ten meaningful tests, including isolation and transaction safety for the `3:07` plan. This is not a real-player result. Manual playtesting remains `NOT_RUN`, and the intended 8–12 minute duration and scare timing are unverified.
+The current TypeScript unit suite passes eleven meaningful tests, including isolation and transaction safety for the `3:07` plan. This is not a real-player result. Manual playtesting remains `NOT_RUN`, and the intended 8–12 minute duration and scare timing are unverified.
 
 Post-restart proof: Paper stopped through Bukkit's normal shutdown path, disabled WorldAgent and WorldEdit, saved players and all dimensions, then restarted on the pinned Paper 26.2 build 123. The live plugin self-test passed nine village checks with four physical interaction markers and twelve canonical `3:07` runtime checks. Zero players were online during verification. This proves the latest runtimes are loaded, not that either map has passed a real-player playthrough.
 
@@ -95,3 +95,11 @@ The user supplied seven real pre-change Minecraft screenshots. Their useful rain
 `npm run art:threeam` applied and reconciled the first bounded hero pass on the real Paper world: 90 changed blocks in the bedroom, 60 in the stairwell and 101 in the courtyard. Every batch used staged mutation, an unchanged dry-run, preview-hash commit and live block reconciliation. It preserves six interaction volumes, all twelve route checkpoints and the ten stair elevations; post-pass `npm run qa:threeam` passed. The deployed runtime now removes the white glowing outline from `3:07` interaction item displays while retaining the interaction hitboxes and labels; a graceful Paper restart loaded it, and plugin self-test reported the canonical twelve `3:07` runtime checks as PASS.
 
 This establishes an automatic direction-to-art workflow, not an autonomous renderer-vision loop. The existing screenshot set predates the pass, so the next human screenshot review is still needed to judge framing, material feel and whether labels need a further in-client reduction.
+
+## Codex Observer avatar — 15. 9. 2026.
+
+The running Paper plugin now spawns a visible, armoured `CODEX • OBSERVER` server avatar and retains its active camera chunk. The local MCP surface has an audited read-only `observer.get_state` tool plus `observer.place`, which accepts only a canonical map ID and saved camera ID; arbitrary coordinates and arbitrary server commands remain unavailable. The avatar is explicitly reported as `SERVER_AVATAR_NOT_PLAYER`, has no renderer and is ignored only by the block-write occupancy guard, while every real player or living entity still blocks unsafe mutation.
+
+After a graceful restart, `npm run observer:avatar` proved the avatar existed in the live world and moved from the courtyard to the `three07-phone` camera; a real entity scan found its ArmorStand body at `[224,101,109]`. `npm test` passed eleven unit tests and post-restart `npm run qa:threeam` still passed all twelve route checkpoints and ten stairs. Evidence: `reports/observer-avatar.json` and `reports/three-oh-seven-qa.json`.
+
+This is a truthful agent character in the server, not a Mojang-authenticated account or a Minecraft renderer client. A real client observer still requires an accessible, licensed account/session; the server's `online-mode=true` security was not weakened.

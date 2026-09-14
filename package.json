@@ -17,6 +17,7 @@
     "masterwork:village": "npm run build && node dist/packages/test-scenarios/masterwork-village.js",
     "build:threeam": "npm run build && node dist/packages/test-scenarios/build-three-oh-seven.js",
     "art:threeam": "npm run build && node dist/packages/test-scenarios/art-three-oh-seven.js",
+    "observer:avatar": "npm run build && node dist/packages/test-scenarios/observer-avatar.js",
     "qa:threeam": "npm run build && node dist/packages/test-scenarios/three-oh-seven-qa.js",
     "test:builder-live": "npm run build && node dist/packages/test-scenarios/builder-smoke.js",
     "export:prototype": "node scripts/export.mjs"

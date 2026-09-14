@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-14T23:58:09.142Z",
+  "status": "PASS",
+  "checks": [
+    "visible server-side Codex Observer exists and moves only to a canonical 3:07 camera",
+    "observer reports its non-player, non-renderer limits explicitly and is excluded from build-occupancy blocking"
+  ],
+  "limitations": [
+    "Codex Observer is a visible server-side ArmorStand, not an authenticated Player or a Minecraft renderer client"
+  ],
+  "initial": {
+    "present": true,
+    "kind": "SERVER_AVATAR_NOT_PLAYER",
+    "renderer": false,
+    "canBlockBuildTransactions": false,
+    "mapId": "three-oh-seven",
+    "cameraId": "three07-courtyard",
+    "position": [
+      201,
+      102,
+      121
+    ],
+    "rotation": [
+      -40,
+      2
+    ],
+    "ok": true,
+    "requestId": "61cae0eb-7d66-4db2-ac65-4272bb48d9a8"
+  },
+  "placed": {
+    "present": true,
+    "kind": "SERVER_AVATAR_NOT_PLAYER",
+    "renderer": false,
+    "canBlockBuildTransactions": false,
+    "mapId": "three-oh-seven",
+    "cameraId": "three07-phone",
+    "position": [
+      224,
+      102,
+      109
+    ],
+    "rotation": [
+      -35,
+      3
+    ],
+    "ok": true,
+    "requestId": "539247d4-5807-4957-b07a-83d89d1f3780"
+  },
+  "body": {
+    "id": "989b39ac-f26a-4811-af65-4f91c23b7d3c",
+    "type": "ARMOR_STAND",
+    "position": [
+      224,
+      101,
+      109
+    ]
+  }
+}
