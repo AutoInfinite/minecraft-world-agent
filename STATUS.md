@@ -83,3 +83,7 @@ Post-restart proof: Paper stopped through Bukkit's normal shutdown path, disable
 ## Open-source repository — 15. 9. 2026.
 
 The source, documentation, structure recipes and non-sensitive evidence are public at `https://github.com/AutoInfinite/minecraft-world-agent` under the MIT license. Git ignores tokens, live worlds, downloaded binaries, build output and runtime logs. This source publication does not make either prototype map a finished or approved release.
+
+## Ambient hostile mob guard — 15. 9. 2026.
+
+User playtesting found ordinary creepers in the `3:07` stairwell despite `spawn-monsters=false`. The new Paper-level guard removes every non-scripted hostile mob from loaded chunks and cancels future non-`CUSTOM` hostile-spawn events; the intentional Village boss uses the `CUSTOM` spawn path and remains allowed. After a graceful restart, Paper logged removal of four leftover ambient hostile mobs and a live entity scan of the reported stairwell found zero hostile entities. The plugin compiled and the nine TypeScript unit tests still passed. This verifies cleanup of the real residual mobs and event registration, not every possible Minecraft spawn reason through a synthetic player test.

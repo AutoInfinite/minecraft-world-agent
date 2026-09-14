@@ -8,7 +8,10 @@ import com.sk89q.worldedit.math.BlockVector3;
 import com.sk89q.worldedit.util.SideEffectSet;
 import org.bukkit.*;
 import org.bukkit.block.TileState;
-import org.bukkit.entity.Player;
+import org.bukkit.entity.*;
+import org.bukkit.event.*;
+import org.bukkit.event.entity.CreatureSpawnEvent;
+import org.bukkit.event.world.ChunkLoadEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.BoundingBox;
 import java.io.*;
@@ -21,7 +24,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 /** All world and ledger access is serialized on Paper's main thread. */
-public final class WorldAgentPlugin extends JavaPlugin {
+public final class WorldAgentPlugin extends JavaPlugin implements Listener {
     private final Gson gson = new GsonBuilder().disableHtmlEscaping().create();
     private HttpServer http;
     private ExecutorService executor;
@@ -73,6 +76,9 @@ public final class WorldAgentPlugin extends JavaPlugin {
             http.start();
             if(Files.exists(directory.resolve("world-model.json")))adventure=new AdventureRuntime(this);
             if(Files.exists(directory.resolve("three-oh-seven-world.json")))threeOhSeven=new ThreeOhSevenRuntime(this);
+            getServer().getPluginManager().registerEvents(this,this);
+            int removed=removeAmbientHostiles(world().getEntities().toArray(Entity[]::new));
+            if(removed>0)getLogger().info("Removed "+removed+" leftover ambient hostile mob(s)");
             getLogger().info("Authenticated bridge on 127.0.0.1:"+policy.port+"; recoveryBlocked="+recoveryBlocked);
         } catch(Exception e) { getLogger().log(java.util.logging.Level.SEVERE,"Bridge startup failed",e);getServer().getPluginManager().disablePlugin(this); }
     }
@@ -80,6 +86,10 @@ public final class WorldAgentPlugin extends JavaPlugin {
     String activeMap(Player player){return activeMaps.get(player.getUniqueId().toString());}
     boolean isActive(Player player,String mapId){return mapId.equals(activeMap(player));}
     void setActiveMap(Player player,String mapId){activeMaps.put(player.getUniqueId().toString(),mapId);saveActiveMaps();}
+    private boolean scriptedHostile(Entity entity){return adventure!=null&&adventure.ownsBoss(entity);}
+    private int removeAmbientHostiles(Entity[] entities){int removed=0;for(Entity entity:entities)if(entity instanceof Monster&&!scriptedHostile(entity)){entity.remove();removed++;}return removed;}
+    @EventHandler(ignoreCancelled=true) public void preventAmbientHostileSpawn(CreatureSpawnEvent event){if(event.getEntity() instanceof Monster&&event.getSpawnReason()!=CreatureSpawnEvent.SpawnReason.CUSTOM)event.setCancelled(true);}
+    @EventHandler public void clearAmbientHostilesFromLoadedChunk(ChunkLoadEvent event){if(event.getWorld().getName().equals(policy.world)){int removed=removeAmbientHostiles(event.getChunk().getEntities());if(removed>0)getLogger().info("Removed "+removed+" leftover ambient hostile mob(s) from a loaded chunk");}}
     private void saveActiveMaps(){
         try{JsonObject data=new JsonObject();activeMaps.forEach(data::addProperty);Path target=directory.resolve("active-maps.json"),tmp=directory.resolve("active-maps.tmp");Files.writeString(tmp,gson.toJson(data),StandardOpenOption.CREATE,StandardOpenOption.TRUNCATE_EXISTING,StandardOpenOption.WRITE);Files.move(tmp,target,StandardCopyOption.ATOMIC_MOVE,StandardCopyOption.REPLACE_EXISTING);}
         catch(IOException e){throw new IllegalStateException("Active map persistence failed",e);}

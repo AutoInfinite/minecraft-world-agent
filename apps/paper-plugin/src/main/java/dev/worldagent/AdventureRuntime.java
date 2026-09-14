@@ -201,6 +201,7 @@ public final class AdventureRuntime implements Listener, CommandExecutor {
     @EventHandler public void respawn(PlayerRespawnEvent e){if(plugin.isActive(e.getPlayer(),"abandoned-mine")&&states.containsKey(e.getPlayer().getUniqueId()))e.setRespawnLocation(checkpoint(e.getPlayer()));}
     @EventHandler public void quit(PlayerQuitEvent e){if(plugin.isActive(e.getPlayer(),"abandoned-mine")&&participants.contains(e.getPlayer().getUniqueId()))resetEncounter();}
     private void resetEncounter(){if(boss!=null){boss.remove();boss=null;}if(bossBar!=null)bossBar.removeAll();for(UUID id:new HashSet<>(participants)){var s=states.get(id);if(s!=null)Progression.event(s,"death");Player p=Bukkit.getPlayer(id);if(p!=null&&!p.isDead())p.teleport(checkpoint(p));}participants.clear();save();}
+    boolean ownsBoss(Entity entity){return boss!=null&&boss.isValid()&&boss.getUniqueId().equals(entity.getUniqueId());}
     public JsonObject inspect(String playerId){var out=new JsonObject();out.addProperty("onlinePlayers",Bukkit.getOnlinePlayers().size());out.addProperty("savedPlayers",states.size());out.addProperty("bossPhase",boss==null?0:phase);if(playerId!=null)out.add("state",gson.toJsonTree(states.get(UUID.fromString(playerId))));return out;}
     public JsonObject selfTest()throws Exception{
         Progression.selfTest();var s=new Progression.State();for(String e:List.of("talk","clue","puzzle:left","puzzle:right","puzzle:left","checkpoint","encounter"))Progression.event(s,e);

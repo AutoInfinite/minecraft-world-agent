@@ -1,0 +1,27 @@
+{
+  "at": "2026-09-15T01:09:17+02:00",
+  "status": "PASS",
+  "symptom": "Ordinary creepers appeared in the 3:07 stairwell although server.properties has spawn-monsters=false.",
+  "implementation": [
+    "Remove non-scripted Monster entities when the plugin enables or a world chunk loads.",
+    "Cancel future non-CUSTOM hostile CreatureSpawnEvent instances.",
+    "Allow the intentional Village boss, which is spawned with Bukkit's CUSTOM path."
+  ],
+  "liveEvidence": {
+    "paperLogRemovals": 4,
+    "verifiedBounds": {
+      "min": [176, 96, 96],
+      "max": [191, 127, 111]
+    },
+    "hostileEntitiesAfterRestart": 0
+  },
+  "verification": [
+    "Paper plugin compiled successfully.",
+    "Nine TypeScript unit tests passed.",
+    "The Paper log recorded cleanup from loaded chunks."
+  ],
+  "limitations": [
+    "This is not a synthetic test of every Minecraft spawn reason.",
+    "A real player should continue the playthrough to confirm the intended boss encounter remains available."
+  ]
+}
