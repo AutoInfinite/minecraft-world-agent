@@ -79,3 +79,7 @@ A second isolated solo horror prototype, `3:07`, now has a canonical nine-region
 The current TypeScript unit suite passes nine meaningful tests, including isolation and transaction safety for the `3:07` plan. This is not a real-player result. Manual playtesting remains `NOT_RUN`, renderer screenshots remain `NOT_CAPTURED`, and the intended 8–12 minute duration and scare timing are unverified.
 
 Post-restart proof: Paper stopped through Bukkit's normal shutdown path, disabled WorldAgent and WorldEdit, saved players and all dimensions, then restarted on the pinned Paper 26.2 build 123. The live plugin self-test passed nine village checks with four physical interaction markers and twelve canonical `3:07` runtime checks. Zero players were online during verification. This proves the latest runtimes are loaded, not that either map has passed a real-player playthrough.
+
+## Open-source repository — 15. 9. 2026.
+
+The source, documentation, structure recipes and non-sensitive evidence are public at `https://github.com/AutoInfinite/minecraft-world-agent` under the MIT license. Git ignores tokens, live worlds, downloaded binaries, build output and runtime logs. This source publication does not make either prototype map a finished or approved release.
