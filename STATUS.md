@@ -70,7 +70,7 @@ Post-migration live geometric QA passes again: all eight canonical locations are
 
 An independent final review found and fixed remaining control/evidence gaps: the TypeScript layer now enforces the transaction operation limit before Paper, `shell` quality also stages protected clearances, portal repairs roll back every opened transaction on failure and verify cell dry-runs, even path widths are exact, steep unwalkable path segments are rejected, and the staged-structure smoke test now compares live checksums before and after cancellation.
 
-The rebuilt plugin and updated model are deployed on disk. The currently running Paper process intentionally was not killed, so its loaded plugin is still the previous binary. The next normal graceful restart activates block-state authoring and the expanded camera registry; running `npm run masterwork:village` after that restart applies/reconciles the oriented roof, trim, lighting and clustered-weathering layer. Actual Minecraft renderer screenshots, Fabric observer automation, organic terrain/elevation work and a complete human playthrough remain unverified. Expert-level or creator-level visual quality is therefore not claimed yet.
+The rebuilt plugin and updated model were activated by a graceful Paper restart on 15 September 2026. Block-state authoring, the expanded camera registry and the `3:07` runtime are now loaded. The full `npm run masterwork:village` pass has not been rerun since that restart. Actual Minecraft renderer screenshots, Fabric observer automation, organic terrain/elevation work and a complete human playthrough remain unverified. Expert-level or creator-level visual quality is therefore not claimed yet.
 
 ## 3:07 prototype — 15. 9. 2026.
 
@@ -78,4 +78,4 @@ A second isolated solo horror prototype, `3:07`, now has a canonical nine-region
 
 The current TypeScript unit suite passes nine meaningful tests, including isolation and transaction safety for the `3:07` plan. This is not a real-player result. Manual playtesting remains `NOT_RUN`, renderer screenshots remain `NOT_CAPTURED`, and the intended 8–12 minute duration and scare timing are unverified.
 
-The deployed plugin jar contains the new runtime, but the currently running Paper process predates that jar. A normal graceful server restart is required before `/threeam` can exercise the new runtime. No restart or playability claim has been made yet.
+Post-restart proof: Paper stopped through Bukkit's normal shutdown path, disabled WorldAgent and WorldEdit, saved players and all dimensions, then restarted on the pinned Paper 26.2 build 123. The live plugin self-test passed nine village checks with four physical interaction markers and twelve canonical `3:07` runtime checks. Zero players were online during verification. This proves the latest runtimes are loaded, not that either map has passed a real-player playthrough.
