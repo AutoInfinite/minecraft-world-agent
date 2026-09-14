@@ -16,6 +16,7 @@
     "repair:portals": "npm run build && node dist/packages/test-scenarios/repair-portals.js",
     "masterwork:village": "npm run build && node dist/packages/test-scenarios/masterwork-village.js",
     "build:threeam": "npm run build && node dist/packages/test-scenarios/build-three-oh-seven.js",
+    "art:threeam": "npm run build && node dist/packages/test-scenarios/art-three-oh-seven.js",
     "qa:threeam": "npm run build && node dist/packages/test-scenarios/three-oh-seven-qa.js",
     "test:builder-live": "npm run build && node dist/packages/test-scenarios/builder-smoke.js",
     "export:prototype": "node scripts/export.mjs"

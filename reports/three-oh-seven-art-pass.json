@@ -1,0 +1,92 @@
+{
+  "at": "2026-09-14T23:42:52.985Z",
+  "status": "PASS",
+  "map": "three-oh-seven",
+  "pass": "compact wet apartment-block hero art",
+  "transactions": [
+    {
+      "id": "307-art-bedroom",
+      "label": "region",
+      "transactionId": "32365569-f5ca-48f9-9c38-94589910502b",
+      "bounds": {
+        "min": [
+          185,
+          110,
+          108
+        ],
+        "max": [
+          196,
+          116,
+          125
+        ]
+      },
+      "operations": 11,
+      "changedBlocks": 90
+    },
+    {
+      "id": "307-art-stairwell",
+      "label": "region",
+      "transactionId": "9c2f3faa-f3e0-497a-bebc-a21b5ad4f208",
+      "bounds": {
+        "min": [
+          177,
+          101,
+          104
+        ],
+        "max": [
+          183,
+          108,
+          115
+        ]
+      },
+      "operations": 11,
+      "changedBlocks": 60
+    },
+    {
+      "id": "307-art-courtyard",
+      "label": "region",
+      "transactionId": "d3ae9cb0-ec90-4a4a-ae96-fb7741ae92a7",
+      "bounds": {
+        "min": [
+          200,
+          100,
+          106
+        ],
+        "max": [
+          211,
+          105,
+          124
+        ]
+      },
+      "operations": 12,
+      "changedBlocks": 101
+    }
+  ],
+  "regions": [
+    {
+      "id": "307-art-bedroom",
+      "purpose": "turn apartment 307 into a compact domestic room with one warm focal light",
+      "status": "APPLIED",
+      "plannedOperations": 11
+    },
+    {
+      "id": "307-art-stairwell",
+      "purpose": "give the stairwell landings, door rhythm and constrained service detail without touching the stairs",
+      "status": "APPLIED",
+      "plannedOperations": 11
+    },
+    {
+      "id": "307-art-courtyard",
+      "purpose": "replace random courtyard clutter with drainage, bins and a laundry-service story",
+      "status": "APPLIED",
+      "plannedOperations": 12
+    }
+  ],
+  "checks": [
+    "every applied edit used begin -> stage -> dry-run with zero pre-commit mutation -> preview-hash commit -> live reconciliation",
+    "all hero-art fills preserve interaction volumes and stay within the 3:07 reserved build bounds"
+  ],
+  "limitations": [
+    "This validates actual block changes, not a post-change Minecraft renderer screenshot or a human playtest"
+  ]
+}

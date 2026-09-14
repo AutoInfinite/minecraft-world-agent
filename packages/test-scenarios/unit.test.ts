@@ -8,6 +8,7 @@ import {detailPass} from '../build-primitives/detail.js';
 import {composeModule} from '../build-primitives/composition.js';
 import {organicPath} from '../build-primitives/landscape.js';
 import {threeOhSevenBuild,THREE_OH_SEVEN_BOUNDS} from '../build-primitives/three-oh-seven.js';
+import {threeOhSevenHeroArtPass,THREE_OH_SEVEN_INTERACTION_VOLUMES} from '../build-primitives/three-oh-seven-art.js';
 import {modelSchema,validateModel,validateCatalog,SpatialIndex} from '../world-model/index.js';
 const policy=policySchema.parse(JSON.parse(readFileSync('config/policy.json','utf8')));
 test('inclusive bounds and protected boundary contact',()=>{
@@ -86,6 +87,17 @@ test('3:07 is an isolated, transaction-safe authored map plan',async()=>{
   for(const batch of batches){
     assert.ok(volume(batch.bounds)<=8192,`${batch.id} transaction volume`);assert.ok(batch.fills.length<=128,`${batch.id} operation budget`);
     for(const fill of batch.fills){assert.ok(policy.palette.includes(blockMaterial(fill.block)),`${batch.id} allowlisted ${fill.block}`);for(let i=0;i<3;i++)assert.ok(fill.bounds.min[i]>=THREE_OH_SEVEN_BOUNDS.min[i]&&fill.bounds.max[i]<=THREE_OH_SEVEN_BOUNDS.max[i],`${batch.id} reserved bounds`);}
+  }
+});
+test('3:07 hero art is deterministic, bounded and keeps interaction volumes clear',()=>{
+  const pass=threeOhSevenHeroArtPass();assert.deepEqual(pass,threeOhSevenHeroArtPass());assert.equal(pass.length,3);
+  for(const batch of pass){
+    assert.ok(batch.fills.length<=128,`${batch.id} operation budget`);assert.ok(volume(batch.bounds)<=8192,`${batch.id} transaction volume`);
+    for(const fill of batch.fills){
+      assert.ok(policy.palette.includes(blockMaterial(fill.block)),`${batch.id} allowlisted ${fill.block}`);
+      for(let i=0;i<3;i++)assert.ok(fill.bounds.min[i]>=THREE_OH_SEVEN_BOUNDS.min[i]&&fill.bounds.max[i]<=THREE_OH_SEVEN_BOUNDS.max[i],`${batch.id} reserved bounds`);
+      for(const protectedBounds of THREE_OH_SEVEN_INTERACTION_VOLUMES)assert.ok(fill.bounds.min.some((v,i)=>v>protectedBounds.max[i]||fill.bounds.max[i]<protectedBounds.min[i]),`${batch.id} interaction overlap`);
+    }
   }
 });
 test('room produces exact 824-block shell and two traversable three-wide entrances',()=>{

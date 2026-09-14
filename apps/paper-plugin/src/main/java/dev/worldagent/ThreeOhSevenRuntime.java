@@ -74,7 +74,7 @@ public final class ThreeOhSevenRuntime implements Listener, CommandExecutor {
         if(world().getBlockAt(location.getBlockX(),location.getBlockY()-1,location.getBlockZ()).getType().isAir())throw new IllegalStateException("3:07 marker has no floor: "+id);
         Chunk chunk=location.getChunk();if(chunks.add(chunk))chunk.addPluginChunkTicket(plugin);
         Interaction hit=world().spawn(location,Interaction.class,e->{e.setInteractionWidth(1.4f);e.setInteractionHeight(2f);e.setResponsive(true);e.setPersistent(true);e.getPersistentDataContainer().set(entityKey,PersistentDataType.STRING,id);});
-        ItemDisplay item=world().spawn(location.clone().add(0,1.05,0),ItemDisplay.class,e->{e.setItemStack(new ItemStack(icon));e.setGlowing(true);e.setPersistent(true);e.getPersistentDataContainer().set(entityKey,PersistentDataType.STRING,id+":item");});
+        ItemDisplay item=world().spawn(location.clone().add(0,1.05,0),ItemDisplay.class,e->{e.setItemStack(new ItemStack(icon));e.setPersistent(true);e.getPersistentDataContainer().set(entityKey,PersistentDataType.STRING,id+":item");});
         TextDisplay text=world().spawn(location.clone().add(0,2.1,0),TextDisplay.class,e->{e.text(Component.text(label));e.setBillboard(Display.Billboard.CENTER);e.setSeeThrough(true);e.setShadowed(true);e.setPersistent(true);e.getPersistentDataContainer().set(entityKey,PersistentDataType.STRING,id+":label");});
         props.add(hit);props.add(item);props.add(text);
     }

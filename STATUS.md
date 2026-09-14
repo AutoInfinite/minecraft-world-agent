@@ -23,12 +23,12 @@ Connected World gate passed on a real Paper server. Full MVP is not complete.
 
 ## Coverage boundaries
 
-Snapshots restore inert block data, including orientation; unsupported existing blocks, block entities and occupied regions are rejected. No entity/inventory/biome/scheduled-tick snapshots. Writes are conservative, synchronous and limited to 8192 blocks. A crash during apply/restore locks future mutations for operator review; automatic crash recovery is not claimed. Clean restart is tested. Human playtest and actual renderer screenshots have not occurred.
+Snapshots restore inert block data, including orientation; unsupported existing blocks, block entities and occupied regions are rejected. No entity/inventory/biome/scheduled-tick snapshots. Writes are conservative, synchronous and limited to 8192 blocks. A crash during apply/restore locks future mutations for operator review; automatic crash recovery is not claimed. Clean restart is tested. A user supplied manual renderer screenshot set for `3:07`; no automated observer capture or post-change renderer review is claimed.
 
 ## Required remaining work
 
 1. Actual client playthrough of intro → NPC → clue → puzzle → checkpoint → boss → ending, including real death/respawn listeners, restart and two-player synchronization. The manual form remains NOT RUN.
-2. Actual renderer screenshots and Fabric observer. Operator-only saved camera teleport/yaw/pitch/time/weather is implemented; FOV/HUD/F2 capture remains manual. Reading the Minecraft client folder returned access denied, and native app control is unavailable. No screenshots were invented.
+2. Fabric observer and automatic before/after renderer capture. Operator-only saved camera teleport/yaw/pitch/time/weather is implemented; FOV/HUD/F2 capture remains manual. A user supplied a manual `3:07` screenshot set, which informed the first art pass; no screenshot was invented and the post-change view still needs review.
 3. Organic terrain, convincing elevation descent, a separate ambush, richer environmental puzzle and balancing to the target 15–20 minutes. Architecture and arena composition have a stronger live pass, but the surrounding world datum and connectors remain mostly flat.
 4. Sponge .schem import/export, richer decoration/damage/vegetation passes and generic quest/encounter authoring. Current reusable structures are actual JSON recipes.
 5. Wider collision/jump QA, client resource-pack validation and one full human playthrough without developer intervention. Current geometric QA is four-neighbor standing-player walking, not every sequence break.
@@ -70,13 +70,13 @@ Post-migration live geometric QA passes again: all eight canonical locations are
 
 An independent final review found and fixed remaining control/evidence gaps: the TypeScript layer now enforces the transaction operation limit before Paper, `shell` quality also stages protected clearances, portal repairs roll back every opened transaction on failure and verify cell dry-runs, even path widths are exact, steep unwalkable path segments are rejected, and the staged-structure smoke test now compares live checksums before and after cancellation.
 
-The rebuilt plugin and updated model were activated by a graceful Paper restart on 15 September 2026. Block-state authoring, the expanded camera registry and the `3:07` runtime are now loaded. The full `npm run masterwork:village` pass has not been rerun since that restart. Actual Minecraft renderer screenshots, Fabric observer automation, organic terrain/elevation work and a complete human playthrough remain unverified. Expert-level or creator-level visual quality is therefore not claimed yet.
+The rebuilt plugin and updated model were activated by a graceful Paper restart on 15 September 2026. Block-state authoring, the expanded camera registry and the `3:07` runtime are now loaded. The full `npm run masterwork:village` pass has not been rerun since that restart. Fabric observer automation, organic terrain/elevation work and a complete human playthrough remain unverified. User-supplied renderer screenshots exist only for the pre-art state, so expert-level or creator-level visual quality is not claimed yet.
 
 ## 3:07 prototype — 15. 9. 2026.
 
 A second isolated solo horror prototype, `3:07`, now has a canonical nine-region/eight-route semantic model, a deterministic transaction-safe build plan and a dedicated Paper gameplay runtime. The actual world build passed staged preview-hash commits and live reconciliation across 11 bounded batches. Twelve authored route checkpoints have solid footing and two-block clearance; exterior route and stair-continuity QA pass. Evidence: `reports/three-oh-seven-build.json` and `reports/three-oh-seven-qa.json`.
 
-The current TypeScript unit suite passes nine meaningful tests, including isolation and transaction safety for the `3:07` plan. This is not a real-player result. Manual playtesting remains `NOT_RUN`, renderer screenshots remain `NOT_CAPTURED`, and the intended 8–12 minute duration and scare timing are unverified.
+The current TypeScript unit suite passes ten meaningful tests, including isolation and transaction safety for the `3:07` plan. This is not a real-player result. Manual playtesting remains `NOT_RUN`, and the intended 8–12 minute duration and scare timing are unverified.
 
 Post-restart proof: Paper stopped through Bukkit's normal shutdown path, disabled WorldAgent and WorldEdit, saved players and all dimensions, then restarted on the pinned Paper 26.2 build 123. The live plugin self-test passed nine village checks with four physical interaction markers and twelve canonical `3:07` runtime checks. Zero players were online during verification. This proves the latest runtimes are loaded, not that either map has passed a real-player playthrough.
 
@@ -87,3 +87,11 @@ The source, documentation, structure recipes and non-sensitive evidence are publ
 ## Ambient hostile mob guard — 15. 9. 2026.
 
 User playtesting found ordinary creepers in the `3:07` stairwell despite `spawn-monsters=false`. The new Paper-level guard removes every non-scripted hostile mob from loaded chunks and cancels future non-`CUSTOM` hostile-spawn events; the intentional Village boss uses the `CUSTOM` spawn path and remains allowed. After a graceful restart, Paper logged removal of four leftover ambient hostile mobs and a live entity scan of the reported stairwell found zero hostile entities. The plugin compiled and the nine TypeScript unit tests still passed. This verifies cleanup of the real residual mobs and event registration, not every possible Minecraft spawn reason through a synthetic player test.
+
+## Automatic `3:07` art direction and hero pass — 15. 9. 2026.
+
+The user supplied seven real pre-change Minecraft screenshots. Their useful rain, blue-night palette and warm practical lights were retained, while the review identified oversized empty fortress-like rooms, broad blank facades, disconnected clutter and bright interaction outlines as the main visual problems. A persistent machine-readable `projects/three-oh-seven/art-direction.json` now carries the compact wet apartment-block direction, explicit anti-generic rules and short per-region moves. The read-only `art.get_direction` MCP tool returns this compact card for the whole map or a named region, avoiding repeated creative briefing.
+
+`npm run art:threeam` applied and reconciled the first bounded hero pass on the real Paper world: 90 changed blocks in the bedroom, 60 in the stairwell and 101 in the courtyard. Every batch used staged mutation, an unchanged dry-run, preview-hash commit and live block reconciliation. It preserves six interaction volumes, all twelve route checkpoints and the ten stair elevations; post-pass `npm run qa:threeam` passed. The deployed runtime now removes the white glowing outline from `3:07` interaction item displays while retaining the interaction hitboxes and labels; a graceful Paper restart loaded it, and plugin self-test reported the canonical twelve `3:07` runtime checks as PASS.
+
+This establishes an automatic direction-to-art workflow, not an autonomous renderer-vision loop. The existing screenshot set predates the pass, so the next human screenshot review is still needed to judge framing, material feel and whether labels need a further in-client reduction.

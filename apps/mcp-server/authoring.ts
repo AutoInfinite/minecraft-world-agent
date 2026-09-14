@@ -8,11 +8,19 @@ import {organicPath} from '../../packages/build-primitives/landscape.js';
 import {boundsSchema,coord,checkBounds} from '../../packages/tool-schemas/index.js';
 import {loadModel,validateModel,SpatialIndex} from '../../packages/world-model/index.js';
 import path from 'node:path';
+import {readFile} from 'node:fs/promises';
 const meta={actor:z.string().min(1).max(120),prompt:z.string().min(1).max(2000)};
 const result=(data:unknown)=>({content:[{type:'text' as const,text:JSON.stringify(data)}]});
 const error=(e:unknown)=>({isError:true,...result({error:e instanceof Error?e.message:String(e)})});
 function childId(parent:string,label:string){const h=createHash('sha256').update(`${parent}:${label}`).digest('hex');return `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${h.slice(17,20)}-${h.slice(20,32)}`;}
 export function registerAuthoring(server:McpServer,bridge:Bridge){
+  server.registerTool('art.get_direction',{description:'Return the compact, persistent art-direction card for a map or one semantic region. Use this before an art pass to avoid re-sending visual briefs.',inputSchema:z.object({...meta,mapId:z.literal('three-oh-seven').default('three-oh-seven'),regionId:z.enum(['apartment.bedroom','apartment.stairwell','courtyard']).optional()}).strict(),annotations:{readOnlyHint:true}},async a=>{
+    try{
+      const direction=JSON.parse(await readFile(path.join(root,'projects','three-oh-seven','art-direction.json'),'utf8'));
+      const region=a.regionId?{[a.regionId]:direction.regions[a.regionId]}:direction.regions;
+      return result({mapId:direction.mapId,northStar:direction.northStar,visualPromise:direction.visualPromise,avoid:direction.avoid,reviewOrder:direction.reviewOrder,regions:region});
+    }catch(e){return error(e);}
+  });
   server.registerTool('build.list_structures',{description:'List reusable structure recipes with dimensions, anchors and masterwork quality metrics.',inputSchema:z.object({...meta,seed:z.number().int().default(20260914)}).strict(),annotations:{readOnlyHint:true}},async a=>{
     try{return result(library(a.seed).map(module=>{const composed=composeModule(module,'masterwork');return {id:module.id,size:module.size,anchors:module.anchors,metrics:composed.metrics};}));}catch(e){return error(e);}
   });

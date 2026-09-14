@@ -1,0 +1,33 @@
+{
+  "mapId": "three-oh-seven",
+  "northStar": "Kompaktan, mokar stambeni blok iz kasnih 1990-ih: stvaran dom koji se kroz kišu pretvara u nelagodan labirint.",
+  "visualPromise": [
+    "Svaki kadar prvo mora čitati kao domaći prostor ili servisno dvorište, pa tek onda kao horor.",
+    "Jedan topli praktični izvor svjetla vodi oko, dok hladni mokri materijali ostaju pozadina.",
+    "Prostor dobiva dubinu pragovima, vratima, policama, prozorima i servisnim tragovima; ne nasumičnim rekvizitima."
+  ],
+  "avoid": [
+    "tvrđavski prazni zidovi i simetrični hodnici",
+    "velike neprekinute tamne fasade",
+    "lebdeći ili nepovezani rekviziti",
+    "svijetleći debug obrubi i dugački tekst iznad interakcija"
+  ],
+  "regions": {
+    "apartment.bedroom": {
+      "role": "Lukin stvarni, skučeni dom; toplina je namjerna, ali previše tiha.",
+      "moves": ["ugrađene police i uzglavlje", "drveni podni trag", "jedno prigušeno toplo svjetlo"],
+      "protect": ["krevet i marker", "put od početka do sata"]
+    },
+    "apartment.stairwell": {
+      "role": "usko prijelazno mjesto s ritmom katova, vrata i instalacija.",
+      "moves": ["bočne ograde", "ritam prozora i vrata", "mali servisni detalji uz zid"],
+      "protect": ["svih deset stepenica", "dva bloka prostora iznad stuba"]
+    },
+    "courtyard": {
+      "role": "mokro servisno dvorište iza zgrade, ne generičan borbeni prostor.",
+      "moves": ["odvodnja", "kante i rublje", "mahovina samo uz rub", "jedan topli izvor svjetla"],
+      "protect": ["vanjska glavna ruta", "crveni zec i marker"]
+    }
+  },
+  "reviewOrder": ["silhouette", "domestic purpose", "route readability", "light hierarchy", "prop relevance"]
+}

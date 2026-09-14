@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-14T21:46:00.217Z",
+  "at": "2026-09-14T23:44:27.047Z",
   "status": "PASS",
   "map": "three-oh-seven",
   "targetMinutes": 10,
@@ -252,7 +252,14 @@
     "onlinePlayers": 0,
     "savedPlayers": 1,
     "bossPhase": 0,
+    "threeOhSeven": {
+      "map": "three-oh-seven",
+      "onlineParticipants": 0,
+      "savedPlayers": 1,
+      "markers": 0,
+      "echoPresent": false
+    },
     "ok": true,
-    "requestId": "26aad1a9-1959-49a8-bb0f-5bd002580c19"
+    "requestId": "58f48205-57db-4730-bb15-e2052aa23f83"
   }
 }
