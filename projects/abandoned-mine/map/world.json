@@ -1,0 +1,36 @@
+{
+  "id":"abandoned-mine","title":"The Village Below","schemaVersion":1,"start":"village.gate","ending":"mine.chamber",
+  "regions":[
+    {"id":"village.gate","role":"onboarding","bounds":{"min":[100,100,118],"max":[114,109,132]},"module":"village-gate","origin":[100,100,118],"rotation":0,"tags":["intro","safe"],"storyBeats":["wake"]},
+    {"id":"village.square","role":"hub","bounds":{"min":[96,100,70],"max":[126,112,100]},"module":"square","origin":[96,100,70],"rotation":0,"tags":["investigation","safe"],"storyBeats":["missing-miners"]},
+    {"id":"village.survivor_house","role":"dialogue","bounds":{"min":[70,100,76],"max":[84,114,90]},"module":"survivor-house","origin":[70,100,76],"rotation":90,"tags":["quest"],"storyBeats":["survivor-lie"]},
+    {"id":"village.blacksmith","role":"investigation","bounds":{"min":[132,100,76],"max":[146,114,90]},"module":"blacksmith","origin":[132,100,76],"rotation":90,"tags":["clue","key"],"storyBeats":["seal-key"]},
+    {"id":"village.church","role":"optional-lore","bounds":{"min":[66,100,104],"max":[84,119,118]},"module":"church","origin":[66,100,104],"rotation":90,"tags":["optional","preparation"],"storyBeats":["deliberate-seal"]},
+    {"id":"mine.road","role":"puzzle","bounds":{"min":[105,100,41],"max":[115,108,69]},"tags":["main","puzzle"],"storyBeats":["open-route"]},
+    {"id":"mine.entrance","role":"checkpoint","bounds":{"min":[102,100,26],"max":[116,109,40]},"module":"mine-tunnel","origin":[102,100,26],"rotation":0,"tags":["checkpoint","cutscene"],"storyBeats":["descent"]},
+    {"id":"mine.chamber","role":"boss","bounds":{"min":[98,100,2],"max":[120,111,24]},"module":"boss-chamber","origin":[98,100,2],"rotation":0,"tags":["boss","ending"],"storyBeats":["truth"]}
+  ],
+  "routes":[
+    {"id":"gate-square","from":"village.gate","to":"village.square","type":"main","bidirectional":true,"points":[[107,100,118],[107,100,100]]},
+    {"id":"survivor-route","from":"village.square","to":"village.survivor_house","type":"main","bidirectional":true,"points":[[96,100,83],[84,100,83]]},
+    {"id":"smith-route","from":"village.square","to":"village.blacksmith","type":"main","bidirectional":true,"points":[[126,100,83],[132,100,83]]},
+    {"id":"church-route","from":"village.square","to":"village.church","type":"optional","bidirectional":true,"points":[[96,100,90],[90,100,90],[90,100,111],[84,100,111]]},
+    {"id":"mine-route","from":"village.square","to":"mine.road","type":"main","bidirectional":true,"points":[[110,100,70],[110,100,55]]},
+    {"id":"road-entrance","from":"mine.road","to":"mine.entrance","type":"main","bidirectional":true,"points":[[110,100,55],[110,100,41],[109,100,41],[109,100,40]]},
+    {"id":"entrance-chamber","from":"mine.entrance","to":"mine.chamber","type":"main","bidirectional":true,"points":[[109,100,26],[109,100,24]]}
+  ],
+  "landmarks":[{"id":"dry-well","region":"village.square","position":[113,101,87]},{"id":"church-tower","region":"village.church","position":[74,119,111]}],
+  "cameras":[
+    {"id":"entrance","region":"village.gate","position":[107,104,130],"yaw":180,"pitch":8,"fov":70,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"square-arrival","region":"village.square","position":[107,102,99],"yaw":180,"pitch":4,"fov":70,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"hero","region":"village.square","position":[122,111,98],"yaw":135,"pitch":28,"fov":70,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"mara-approach","region":"village.survivor_house","position":[93,102,83],"yaw":90,"pitch":2,"fov":65,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"smith-reveal","region":"village.blacksmith","position":[127,102,83],"yaw":-90,"pitch":3,"fov":65,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"church-reveal","region":"village.church","position":[91,103,106],"yaw":105,"pitch":12,"fov":70,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"route-reveal","region":"mine.road","position":[110,103,65],"yaw":180,"pitch":5,"fov":70,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"mine-threshold","region":"mine.entrance","position":[109,103,42],"yaw":180,"pitch":7,"fov":65,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"encounter-threshold","region":"mine.chamber","position":[109,103,23],"yaw":180,"pitch":10,"fov":75,"hud":false,"time":18000,"weather":"clear"},
+    {"id":"encounter","region":"mine.chamber","position":[109,107,22],"yaw":180,"pitch":20,"fov":80,"hud":false,"time":18000,"weather":"clear"}
+  ],
+  "storyBeats":["wake","missing-miners","survivor-lie","seal-key","deliberate-seal","open-route","descent","truth"]
+}

@@ -1,0 +1,203 @@
+{
+  "id": "boss-chamber",
+  "size": [
+    23,
+    12,
+    23
+  ],
+  "anchors": {
+    "entrance": [
+      11,
+      1,
+      22
+    ],
+    "exit": [
+      11,
+      1,
+      0
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          22,
+          11,
+          22
+        ]
+      },
+      "block": "minecraft:deepslate_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          21,
+          10,
+          21
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          10,
+          1,
+          0
+        ],
+        "max": [
+          12,
+          3,
+          0
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          10,
+          1,
+          22
+        ],
+        "max": [
+          12,
+          3,
+          22
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          1,
+          5
+        ],
+        "max": [
+          5,
+          6,
+          5
+        ]
+      },
+      "block": "minecraft:polished_andesite"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          7,
+          5
+        ],
+        "max": [
+          5,
+          7,
+          5
+        ]
+      },
+      "block": "minecraft:sea_lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          1,
+          17
+        ],
+        "max": [
+          5,
+          6,
+          17
+        ]
+      },
+      "block": "minecraft:polished_andesite"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          7,
+          17
+        ],
+        "max": [
+          5,
+          7,
+          17
+        ]
+      },
+      "block": "minecraft:sea_lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          17,
+          1,
+          5
+        ],
+        "max": [
+          17,
+          6,
+          5
+        ]
+      },
+      "block": "minecraft:polished_andesite"
+    },
+    {
+      "bounds": {
+        "min": [
+          17,
+          7,
+          5
+        ],
+        "max": [
+          17,
+          7,
+          5
+        ]
+      },
+      "block": "minecraft:sea_lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          17,
+          1,
+          17
+        ],
+        "max": [
+          17,
+          6,
+          17
+        ]
+      },
+      "block": "minecraft:polished_andesite"
+    },
+    {
+      "bounds": {
+        "min": [
+          17,
+          7,
+          17
+        ],
+        "max": [
+          17,
+          7,
+          17
+        ]
+      },
+      "block": "minecraft:sea_lantern"
+    }
+  ],
+  "seed": 20260914
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "maps": [
+    {
+      "id": "abandoned-mine",
+      "title": "The Village Below",
+      "project": "abandoned-mine",
+      "authoringBounds": {"min": [60, 96, 0], "max": [159, 159, 159]}
+    },
+    {
+      "id": "three-oh-seven",
+      "title": "3:07",
+      "project": "three-oh-seven",
+      "authoringBounds": {"min": [176, 96, 88], "max": [239, 139, 135]}
+    }
+  ]
+}

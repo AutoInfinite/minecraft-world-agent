@@ -1,0 +1,10 @@
+{
+  "verifiedAt":"2026-09-14",
+  "java":"25.0.1+8", "node":"24.14.0", "gradle":"9.1.0",
+  "downloads":[
+    {"path":"server-dev/paper.jar","url":"https://fill-data.papermc.io/v1/objects/7b7b3b43c009103e1971a0576c26f655a7dd9b56a0a2a4438e352c03a7fecd08/paper-26.2-123.jar","algorithm":"sha256","hash":"7b7b3b43c009103e1971a0576c26f655a7dd9b56a0a2a4438e352c03a7fecd08"},
+    {"path":"server-dev/plugins/worldedit-bukkit-7.4.5.jar","url":"https://cdn.modrinth.com/data/1u6JkXh5/versions/F5ea2ov3/worldedit-bukkit-7.4.5.jar","algorithm":"sha512","hash":"a383492fac6bfb4d43a257dfa7b5fc076aae503a71151b463de4fe80e6f3d5fc11209eaf4097baa115f3febf0adc40ca0a1ecda227b8439b429d0a4ba3a63a4f"},
+    {"path":".tools/gradle-9.1.0-bin.zip","url":"https://services.gradle.org/distributions/gradle-9.1.0-bin.zip","algorithm":"sha256","hash":"a17ddd85a26b6a7f5ddb71ff8b05fc5104c0202c6e64782429790c933686c806"}
+  ],
+  "sources":["https://docs.papermc.io/paper/getting-started/","https://fill.papermc.io/v3/projects/paper/versions/26.2/builds/123","https://worldedit.enginehub.org/en/latest/install/","https://api.modrinth.com/v2/version/F5ea2ov3","https://docs.gradle.org/current/userguide/compatibility.html","https://registry.npmjs.org/@modelcontextprotocol/sdk/1.30.0","https://registry.npmjs.org/typescript/7.0.2"]
+}

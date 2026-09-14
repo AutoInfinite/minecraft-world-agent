@@ -1,0 +1,9 @@
+{
+  "id":"mara","displayAdapter":"vanilla-villager","region":"village.survivor_house",
+  "greeting":"Mara: Rudari nisu nestali. Samo... ne idi ispod sela. Ključ je izgorio u kovačnici.",
+  "choices":{
+    "trust":"Mara: Onda mi vjeruj još jednom. U kovačnici traži pečat s tri ureza. Ne slušaj kucanje.",
+    "accuse":"Mara: Da, lagala sam. Mi smo zatvorili vrata. Ako uzmeš ključ iz kovačnice, teret postaje tvoj."
+  },
+  "condition":"stage == PROLOGUE","effect":"talk -> INVESTIGATE"
+}

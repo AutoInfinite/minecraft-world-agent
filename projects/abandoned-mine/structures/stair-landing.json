@@ -1,0 +1,113 @@
+{
+  "id": "stair-landing",
+  "size": [
+    5,
+    6,
+    6
+  ],
+  "anchors": {
+    "bottom": [
+      2,
+      1,
+      0
+    ],
+    "top": [
+      2,
+      6,
+      5
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          4,
+          0,
+          0
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          1
+        ],
+        "max": [
+          4,
+          1,
+          1
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          2
+        ],
+        "max": [
+          4,
+          2,
+          2
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          3
+        ],
+        "max": [
+          4,
+          3,
+          3
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          4
+        ],
+        "max": [
+          4,
+          4,
+          4
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          5
+        ],
+        "max": [
+          4,
+          5,
+          5
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    }
+  ],
+  "seed": 20260914
+}

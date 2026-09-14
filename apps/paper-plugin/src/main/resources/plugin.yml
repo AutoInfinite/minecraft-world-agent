@@ -1,0 +1,13 @@
+name: WorldAgent
+version: 0.1.0
+main: dev.worldagent.WorldAgentPlugin
+api-version: '26.2'
+depend: [WorldEdit]
+description: Bounded authenticated local world authoring bridge
+commands:
+  village:
+    description: Start or inspect The Village Below prototype
+    usage: /village start|state|talk|choose|investigate|lore|puzzle|camera
+  threeam:
+    description: Start or inspect the 3:07 horror test map
+    usage: /threeam start|state|reset|camera

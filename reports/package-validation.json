@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-14T09:27:22.077Z",
+  "status": "PASS",
+  "checks": [
+    "live world archive rejected by session lock",
+    "prototype starts with fresh generated token",
+    "exported Paper + WorldEdit + gameplay plugin initialize",
+    "actual exported spawn floor and clearance match",
+    "clean shutdown",
+    "MCP unavailable error after stop"
+  ]
+}

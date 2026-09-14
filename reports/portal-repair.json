@@ -1,0 +1,357 @@
+{
+  "at": "2026-09-14T21:05:46.610Z",
+  "status": "PASS",
+  "repairs": [
+    {
+      "region": "village.gate",
+      "bounds": {
+        "min": [
+          106,
+          101,
+          132
+        ],
+        "max": [
+          108,
+          103,
+          132
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.gate",
+      "bounds": {
+        "min": [
+          106,
+          101,
+          118
+        ],
+        "max": [
+          108,
+          103,
+          118
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.gate",
+      "bounds": {
+        "min": [
+          106,
+          101,
+          129
+        ],
+        "max": [
+          108,
+          103,
+          131
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.square",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          82
+        ],
+        "max": [
+          110,
+          103,
+          84
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.survivor_house",
+      "bounds": {
+        "min": [
+          84,
+          101,
+          82
+        ],
+        "max": [
+          84,
+          103,
+          84
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.survivor_house",
+      "bounds": {
+        "min": [
+          70,
+          101,
+          82
+        ],
+        "max": [
+          70,
+          103,
+          84
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.blacksmith",
+      "bounds": {
+        "min": [
+          146,
+          101,
+          82
+        ],
+        "max": [
+          146,
+          103,
+          84
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.blacksmith",
+      "bounds": {
+        "min": [
+          132,
+          101,
+          82
+        ],
+        "max": [
+          132,
+          103,
+          84
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.church",
+      "bounds": {
+        "min": [
+          84,
+          101,
+          110
+        ],
+        "max": [
+          84,
+          103,
+          112
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "village.church",
+      "bounds": {
+        "min": [
+          66,
+          101,
+          110
+        ],
+        "max": [
+          66,
+          103,
+          112
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.entrance",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          40
+        ],
+        "max": [
+          110,
+          103,
+          40
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.entrance",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          26
+        ],
+        "max": [
+          110,
+          103,
+          26
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.entrance",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          36
+        ],
+        "max": [
+          110,
+          103,
+          38
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.entrance",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          37
+        ],
+        "max": [
+          110,
+          103,
+          40
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.entrance",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          26
+        ],
+        "max": [
+          110,
+          103,
+          37
+        ]
+      },
+      "status": "REPAIRED",
+      "transactionId": "fed5975f-be49-494b-83ba-751c9a41abac",
+      "changedBlocks": 6,
+      "checksum": "7dbe33f9e7da1dddd10a5a0eb05fc9addbecbb9e1d42e5e9a87ce5a030f0c9ab"
+    },
+    {
+      "region": "mine.chamber",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          24
+        ],
+        "max": [
+          110,
+          103,
+          24
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.chamber",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          2
+        ],
+        "max": [
+          110,
+          103,
+          2
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.chamber",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          12
+        ],
+        "max": [
+          110,
+          103,
+          14
+        ]
+      },
+      "status": "ALREADY_CLEAR",
+      "changedBlocks": 0
+    },
+    {
+      "region": "mine.chamber",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          13
+        ],
+        "max": [
+          110,
+          103,
+          24
+        ]
+      },
+      "status": "REPAIRED_BY_CELLS",
+      "changedBlocks": 27,
+      "remainingBlockedCells": 0
+    },
+    {
+      "region": "mine.chamber",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          2
+        ],
+        "max": [
+          110,
+          103,
+          13
+        ]
+      },
+      "status": "REPAIRED_BY_CELLS",
+      "changedBlocks": 27,
+      "remainingBlockedCells": 0
+    }
+  ],
+  "checks": [
+    "every declared entrance/exit plane is three blocks wide, three blocks high and air in the live Paper world",
+    "each changed portal used an isolated staged transaction, unchanged dry-run and exact preview hash"
+  ],
+  "limitations": [
+    "This pass repairs declared portal planes; it does not replace renderer or full collision QA"
+  ]
+}

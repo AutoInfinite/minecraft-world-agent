@@ -1,0 +1,108 @@
+{
+  "id": "dry-well",
+  "size": [
+    5,
+    5,
+    5
+  ],
+  "anchors": {
+    "front": [
+      2,
+      1,
+      0
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          4,
+          0,
+          4
+        ]
+      },
+      "block": "minecraft:cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          0
+        ],
+        "max": [
+          4,
+          2,
+          4
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          3,
+          2,
+          3
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          3,
+          2
+        ],
+        "max": [
+          0,
+          3,
+          2
+        ]
+      },
+      "block": "minecraft:oak_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          4,
+          3,
+          2
+        ],
+        "max": [
+          4,
+          3,
+          2
+        ]
+      },
+      "block": "minecraft:oak_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          4,
+          2
+        ],
+        "max": [
+          4,
+          4,
+          2
+        ]
+      },
+      "block": "minecraft:oak_log"
+    }
+  ],
+  "seed": 20260914
+}

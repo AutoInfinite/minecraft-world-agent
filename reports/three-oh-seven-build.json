@@ -1,0 +1,266 @@
+{
+  "at": "2026-09-14T21:45:08.111Z",
+  "status": "PASS",
+  "map": "three-oh-seven",
+  "title": "3:07",
+  "targetMinutes": 10,
+  "transactions": [
+    {
+      "id": "307-platform",
+      "purpose": "two-layer floating soundstage with a continuous safe floor",
+      "transactionId": "196d3372-44b5-4489-9fc0-c321c9089ad0",
+      "bounds": {
+        "min": [
+          176,
+          99,
+          88
+        ],
+        "max": [
+          239,
+          100,
+          135
+        ]
+      },
+      "operations": 17,
+      "changedBlocks": 25,
+      "beforeChecksum": "4763dda9a14208825dcdcde65abd86d55875ab3f8b4776735bdbe2c0840df728",
+      "afterChecksum": "22b5d244b1a67b7838d35f5e17eb81b708751f4ec84fea644b3c2447dd64dd85"
+    },
+    {
+      "id": "307-apartment-lower",
+      "purpose": "recessed lobby, back entrance and long single-flight stair",
+      "transactionId": "1c02dcc4-0cfb-44bd-9322-40ad69595dd0",
+      "bounds": {
+        "min": [
+          176,
+          101,
+          96
+        ],
+        "max": [
+          198,
+          110,
+          126
+        ]
+      },
+      "operations": 36,
+      "changedBlocks": 46,
+      "beforeChecksum": "5a0d38af5575cdbab76b6b3e6427a5b3f16b8f8b646d9dc477ada5a009de551c",
+      "afterChecksum": "f9a67ec49c904fa87e6d34f7abb7f7dbbd20bfe0231a9b749376f973b9b45e34"
+    },
+    {
+      "id": "307-apartment-upper",
+      "purpose": "apartment 307, corridor, balconies and warm bedroom focal point",
+      "transactionId": "e367d188-ac2c-4eda-876e-c18863774f80",
+      "bounds": {
+        "min": [
+          176,
+          110,
+          96
+        ],
+        "max": [
+          201,
+          118,
+          126
+        ]
+      },
+      "operations": 37,
+      "changedBlocks": 5,
+      "beforeChecksum": "d99a0b15b996fb66fd22a0d03132930660c0c5f701144b5f834593e7e6c4090c",
+      "afterChecksum": "67dea9f6622283971b0a7dfad6a0fed804aca5f0eea9341bd387ad8eb70458b1"
+    },
+    {
+      "id": "307-apartment-roof",
+      "purpose": "dominant stair-tower silhouette, roof tanks and antenna",
+      "transactionId": "a894e382-196d-46c0-bbeb-04c4f304d456",
+      "bounds": {
+        "min": [
+          176,
+          119,
+          96
+        ],
+        "max": [
+          198,
+          127,
+          126
+        ]
+      },
+      "operations": 14,
+      "changedBlocks": 0,
+      "beforeChecksum": "99617267e6f5b856a288906233b37b41c4f0be2d97f4e924e9265e49caf4da67",
+      "afterChecksum": "99617267e6f5b856a288906233b37b41c4f0be2d97f4e924e9265e49caf4da67"
+    },
+    {
+      "id": "307-north-block-a",
+      "purpose": "first irregular residential facade and deep doorway",
+      "transactionId": "6a3ed665-6430-466f-aab4-65b4d5ec7184",
+      "bounds": {
+        "min": [
+          202,
+          101,
+          88
+        ],
+        "max": [
+          220,
+          115,
+          103
+        ]
+      },
+      "operations": 17,
+      "changedBlocks": 1,
+      "beforeChecksum": "fcf2f22cadfbca8ebd716d68f41496b86c16405f09756ef14a7464b791d9fd8c",
+      "afterChecksum": "43a264bd3108d339f944ae117724c7c60b4db572fa896f7a4d1557148c64e2b5"
+    },
+    {
+      "id": "307-north-block-b",
+      "purpose": "taller offset facade that closes the street canyon",
+      "transactionId": "70650044-b7c7-46b3-bb1c-9273e9d173c0",
+      "bounds": {
+        "min": [
+          221,
+          101,
+          88
+        ],
+        "max": [
+          239,
+          118,
+          103
+        ]
+      },
+      "operations": 17,
+      "changedBlocks": 18,
+      "beforeChecksum": "d031db416176107a2b59b3639b0c0d39f37d134bb22891791c8d701abbc3f21f",
+      "afterChecksum": "d39fba74ba1c0d8db3d64ecea5c8930bd55043bdae4c3203871d084e6f085ad7"
+    },
+    {
+      "id": "307-south-garages",
+      "purpose": "compressed alley, uneven garage doors and low roofline",
+      "transactionId": "b4324afc-8902-452b-8bb9-06d081c8838c",
+      "bounds": {
+        "min": [
+          198,
+          101,
+          126
+        ],
+        "max": [
+          217,
+          109,
+          135
+        ]
+      },
+      "operations": 11,
+      "changedBlocks": 9,
+      "beforeChecksum": "c57cb27832978188392933101774040559d91433ee8c90c1d41aee2b606a3355",
+      "afterChecksum": "72939ed7a15501237fff6d2d8ef46659e4b7842f80eb6f7813f53521163709be"
+    },
+    {
+      "id": "307-east-backdrop",
+      "purpose": "layered end-of-street silhouette and dark recesses",
+      "transactionId": "530b12c5-0583-44f8-841c-60bf9c7cc01e",
+      "bounds": {
+        "min": [
+          232,
+          101,
+          102
+        ],
+        "max": [
+          239,
+          120,
+          135
+        ]
+      },
+      "operations": 15,
+      "changedBlocks": 8,
+      "beforeChecksum": "5f36a268e8f07aac16dd87fcd9311554ff7ebd4ffabf17ebcc141ff9db1858b3",
+      "afterChecksum": "7b231d1f0c21c9f6a49c2056fe5e02cc36902a3f0d00198137e87e838af39141"
+    },
+    {
+      "id": "307-courtyard",
+      "purpose": "laundry, bins, dead tree, wet patch and the red rabbit clue",
+      "transactionId": "69908ad7-f45d-4ee6-8c7b-fd8b5fcbb401",
+      "bounds": {
+        "min": [
+          199,
+          101,
+          105
+        ],
+        "max": [
+          212,
+          107,
+          125
+        ]
+      },
+      "operations": 12,
+      "changedBlocks": 0,
+      "beforeChecksum": "d84419b4c0995a578b60e130f095b14fc4ad1410ca0ec5a7f16feb1bba58035f",
+      "afterChecksum": "d84419b4c0995a578b60e130f095b14fc4ad1410ca0ec5a7f16feb1bba58035f"
+    },
+    {
+      "id": "307-playground",
+      "purpose": "asymmetric fenced playground with two empty swings",
+      "transactionId": "e3aea96a-5b78-4b3a-af40-30d82d5f904d",
+      "bounds": {
+        "min": [
+          218,
+          101,
+          118
+        ],
+        "max": [
+          238,
+          107,
+          134
+        ]
+      },
+      "operations": 17,
+      "changedBlocks": 8,
+      "beforeChecksum": "8f3c479187853c583f37eea0576ef4d2f5c9cdc4507267abcdf85262de025ffb",
+      "afterChecksum": "26e6f787e168165945fc72d77c9011bbbc4c15027fec2e4fc3ac4d230674edf0"
+    },
+    {
+      "id": "307-phone-street",
+      "purpose": "payphone, bus shelter and sparse pools of light",
+      "transactionId": "9cd35789-67ca-4fbb-8198-356558bf2392",
+      "bounds": {
+        "min": [
+          207,
+          100,
+          101
+        ],
+        "max": [
+          230,
+          108,
+          117
+        ]
+      },
+      "operations": 16,
+      "changedBlocks": 44,
+      "beforeChecksum": "89bf907969177620b616d09c0c9b04d156872fb8d96d3a0791977c391baf7010",
+      "afterChecksum": "be349ff7a15187a144a9ace3d76af3862a503fa0f22119c4ec513ca9db83d29a"
+    }
+  ],
+  "checks": [
+    "12 authored route checkpoints have solid footing and two-block clearance in the actual world",
+    "all batches used begin -> stage -> dry-run -> explicit preview-hash commit -> live block reconciliation"
+  ],
+  "limitations": [
+    "No renderer screenshots",
+    "Duration and scare timing require a human playthrough",
+    "The running server must be restarted normally before /threeam uses the new runtime"
+  ],
+  "plan": {
+    "batches": 11,
+    "operations": 209,
+    "reservedBounds": {
+      "min": [
+        176,
+        99,
+        88
+      ],
+      "max": [
+        239,
+        127,
+        135
+      ]
+    }
+  },
+  "postBuildEntities": []
+}

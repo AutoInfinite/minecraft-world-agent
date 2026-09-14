@@ -1,0 +1,28 @@
+name: Build and fixture verification
+on: [push, pull_request]
+jobs:
+  verify:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.14.0'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25.0.1+8'
+      - run: node scripts/dev.mjs setup
+      - run: node scripts/dev.mjs deploy
+      - run: npm test
+      # Repository owner must accept the Minecraft EULA in repository settings.
+      - if: vars.MINECRAFT_EULA_ACCEPTED == 'true'
+        run: node scripts/run-tests.mjs --accept-eula
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-${{ matrix.os }}
+          path: reports/

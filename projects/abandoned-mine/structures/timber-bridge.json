@@ -1,0 +1,68 @@
+{
+  "id": "timber-bridge",
+  "size": [
+    5,
+    3,
+    15
+  ],
+  "anchors": {
+    "entrance": [
+      2,
+      1,
+      0
+    ],
+    "exit": [
+      2,
+      1,
+      14
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          4,
+          0,
+          14
+        ]
+      },
+      "block": "minecraft:oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          0
+        ],
+        "max": [
+          0,
+          2,
+          14
+        ]
+      },
+      "block": "minecraft:oak_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          4,
+          1,
+          0
+        ],
+        "max": [
+          4,
+          2,
+          14
+        ]
+      },
+      "block": "minecraft:oak_log"
+    }
+  ],
+  "seed": 20260914
+}

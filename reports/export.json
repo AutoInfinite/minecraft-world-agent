@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-14T09:24:58.656Z",
+  "status": "PROTOTYPE_ONLY",
+  "zip": "C:\\Users\\delik\\Desktop\\minecraft-world-agent\\.runtime\\exports\\village-prototype-2026-09-14T09-24-56-602Z.zip",
+  "bytes": 72158928,
+  "sha256": "88651b596002db62f7e8ad26b5bd70ca1022e6ff5356a65d8ea2fe10b3781646",
+  "worldArchive": "village-prototype-2026-09-14T09-24-56-602Z-world.tar",
+  "manualPlaytest": "NOT_RUN",
+  "screenshots": "NOT_CAPTURED",
+  "excluded": [
+    "tokens",
+    "development player state",
+    "development transaction ledger",
+    "node_modules"
+  ],
+  "qa": "reports/village-qa.json"
+}

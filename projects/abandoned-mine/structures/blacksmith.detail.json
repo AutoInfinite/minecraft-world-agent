@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "style": "abandoned mining village: layered stone foundations, exposed timber frames, readable silhouettes, practical interiors, warm wayfinding light, restrained decay",
+  "id": "blacksmith",
+  "size": [
+    15,
+    15,
+    15
+  ],
+  "anchors": {
+    "entrance": [
+      7,
+      1,
+      0
+    ],
+    "exit": [
+      7,
+      1,
+      14
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          0
+        ],
+        "max": [
+          14,
+          1,
+          0
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          14
+        ],
+        "max": [
+          14,
+          1,
+          14
+        ]
+      },
+      "block": "minecraft:cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          1
+        ],
+        "max": [
+          0,
+          1,
+          13
+        ]
+      },
+      "block": "minecraft:cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          1
+        ],
+        "max": [
+          14,
+          1,
+          13
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          0
+        ],
+        "max": [
+          0,
+          6,
+          0
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          14
+        ],
+        "max": [
+          0,
+          6,
+          14
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          7,
+          1,
+          0
+        ],
+        "max": [
+          7,
+          6,
+          0
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          7,
+          1,
+          14
+        ],
+        "max": [
+          7,
+          6,
+          14
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          0
+        ],
+        "max": [
+          14,
+          6,
+          0
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          14
+        ],
+        "max": [
+          14,
+          6,
+          14
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          0
+        ],
+        "max": [
+          0,
+          6,
+          0
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          0
+        ],
+        "max": [
+          14,
+          6,
+          0
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          7
+        ],
+        "max": [
+          0,
+          6,
+          7
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          7
+        ],
+        "max": [
+          14,
+          6,
+          7
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          14
+        ],
+        "max": [
+          0,
+          6,
+          14
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          14
+        ],
+        "max": [
+          14,
+          6,
+          14
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          4,
+          0
+        ],
+        "max": [
+          14,
+          4,
+          0
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          4,
+          14
+        ],
+        "max": [
+          14,
+          4,
+          14
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          2,
+          2
+        ],
+        "max": [
+          0,
+          5,
+          2
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          2,
+          4
+        ],
+        "max": [
+          0,
+          5,
+          4
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          2,
+          2
+        ],
+        "max": [
+          14,
+          5,
+          2
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          2,
+          4
+        ],
+        "max": [
+          14,
+          5,
+          4
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          2,
+          10
+        ],
+        "max": [
+          0,
+          5,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          2,
+          12
+        ],
+        "max": [
+          0,
+          5,
+          12
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          2,
+          10
+        ],
+        "max": [
+          14,
+          5,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          2,
+          12
+        ],
+        "max": [
+          14,
+          5,
+          12
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          12
+        ],
+        "max": [
+          2,
+          3,
+          12
+        ]
+      },
+      "block": "minecraft:bookshelf"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          1,
+          12
+        ],
+        "max": [
+          4,
+          1,
+          12
+        ]
+      },
+      "block": "minecraft:dark_oak_slab"
+    },
+    {
+      "bounds": {
+        "min": [
+          4,
+          1,
+          3
+        ],
+        "max": [
+          4,
+          1,
+          3
+        ]
+      },
+      "block": "minecraft:crafting_table"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          2
+        ],
+        "max": [
+          6,
+          1,
+          6
+        ]
+      },
+      "block": "minecraft:polished_deepslate"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          2,
+          3
+        ],
+        "max": [
+          5,
+          2,
+          5
+        ]
+      },
+      "block": "minecraft:magma_block"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          3,
+          2
+        ],
+        "max": [
+          6,
+          3,
+          2
+        ]
+      },
+      "block": "minecraft:iron_bars"
+    },
+    {
+      "bounds": {
+        "min": [
+          7,
+          1,
+          5
+        ],
+        "max": [
+          7,
+          1,
+          5
+        ]
+      },
+      "block": "minecraft:anvil"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          4,
+          3
+        ],
+        "max": [
+          3,
+          11,
+          3
+        ]
+      },
+      "block": "minecraft:cobbled_deepslate"
+    },
+    {
+      "bounds": {
+        "min": [
+          9,
+          2,
+          11
+        ],
+        "max": [
+          9,
+          2,
+          11
+        ]
+      },
+      "block": "minecraft:iron_bars"
+    },
+    {
+      "bounds": {
+        "min": [
+          9,
+          1,
+          11
+        ],
+        "max": [
+          9,
+          1,
+          11
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          11,
+          1,
+          2
+        ],
+        "max": [
+          13,
+          1,
+          4
+        ]
+      },
+      "block": "minecraft:hay_block"
+    }
+  ],
+  "seed": 20260914
+}

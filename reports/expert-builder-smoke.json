@@ -1,0 +1,181 @@
+{
+  "at": "2026-09-14T21:14:32.448Z",
+  "status": "PASS",
+  "checks": [
+    "structure discovery exposes 12 recipes and preflight masterwork diagnostics without opening a transaction",
+    "build.create_path staged an organic turning path without mutation, committed it, and restored the exact live-world checksum",
+    "build.place_structure returned layered quality diagnostics and cancelled its reviewed dry-run without world mutation"
+  ],
+  "limitations": [
+    "Uses an isolated fixture and proves tool behavior, not renderer-level visual quality"
+  ],
+  "catalog": {
+    "count": 12,
+    "church": {
+      "id": "church",
+      "size": [
+        15,
+        20,
+        19
+      ],
+      "anchors": {
+        "entrance": [
+          7,
+          1,
+          0
+        ],
+        "exit": [
+          7,
+          1,
+          18
+        ]
+      },
+      "quality": "masterwork",
+      "layers": [
+        {
+          "layer": "structure",
+          "operations": 25,
+          "purpose": "primary massing and weather shell"
+        },
+        {
+          "layer": "architecture",
+          "operations": 49,
+          "purpose": "foundation, framing, facade rhythm and interiors"
+        },
+        {
+          "layer": "story",
+          "operations": 39,
+          "purpose": "silhouette, depth, focal hierarchy and environmental story"
+        },
+        {
+          "layer": "weathering",
+          "operations": 10,
+          "purpose": "clustered damp, exposed-edge and structural-stress aging"
+        },
+        {
+          "layer": "lighting",
+          "operations": 4,
+          "purpose": "concealed warm guidance and restrained soul accents"
+        },
+        {
+          "layer": "clearance",
+          "operations": 2,
+          "purpose": "protected traversal portals applied last"
+        }
+      ],
+      "metrics": {
+        "operations": 125,
+        "paletteSize": 22,
+        "orientedBlocks": 341,
+        "detailBlocks": 779,
+        "weatheredBlocks": 10,
+        "lights": 4,
+        "storyProps": 6,
+        "portalClear": true,
+        "reservedClear": true
+      },
+      "palette": [
+        "minecraft:air",
+        "minecraft:bookshelf",
+        "minecraft:cobblestone",
+        "minecraft:cobweb",
+        "minecraft:crafting_table",
+        "minecraft:dark_oak_planks",
+        "minecraft:dark_oak_slab",
+        "minecraft:dark_oak_stairs",
+        "minecraft:glass",
+        "minecraft:mossy_cobblestone",
+        "minecraft:mud_bricks",
+        "minecraft:polished_andesite",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:purple_stained_glass",
+        "minecraft:sea_lantern",
+        "minecraft:soul_lantern",
+        "minecraft:spruce_log",
+        "minecraft:spruce_planks",
+        "minecraft:stone_brick_stairs",
+        "minecraft:stone_brick_wall",
+        "minecraft:stone_bricks",
+        "minecraft:stripped_spruce_log",
+        "minecraft:tuff_bricks"
+      ]
+    }
+  },
+  "path": {
+    "transactionId": "b9b8dc09-1448-4ca3-a7bc-805b58e8ac70",
+    "bounds": {
+      "min": [
+        178,
+        100,
+        180
+      ],
+      "max": [
+        188,
+        100,
+        194
+      ]
+    },
+    "metrics": {
+      "length": 20,
+      "turns": 1,
+      "operations": 20,
+      "palette": [
+        "minecraft:coarse_dirt",
+        "minecraft:cobblestone",
+        "minecraft:gravel",
+        "minecraft:mossy_cobblestone",
+        "minecraft:rooted_dirt"
+      ],
+      "width": 4,
+      "irregularEdgeBlocks": 5
+    },
+    "changedBlocks": 77
+  },
+  "structure": {
+    "transactionId": "a965fb83-02a4-44cd-a2f5-5cb401bd57c1",
+    "metrics": {
+      "operations": 5,
+      "paletteSize": 2,
+      "orientedBlocks": 0,
+      "detailBlocks": 0,
+      "weatheredBlocks": 0,
+      "lights": 0,
+      "storyProps": 0,
+      "portalClear": true,
+      "reservedClear": true
+    },
+    "layers": [
+      {
+        "layer": "structure",
+        "operations": 3,
+        "purpose": "primary massing and weather shell"
+      },
+      {
+        "layer": "architecture",
+        "operations": 0,
+        "purpose": "foundation, framing, facade rhythm and interiors"
+      },
+      {
+        "layer": "story",
+        "operations": 0,
+        "purpose": "silhouette, depth, focal hierarchy and environmental story"
+      },
+      {
+        "layer": "weathering",
+        "operations": 0,
+        "purpose": "clustered damp, exposed-edge and structural-stress aging"
+      },
+      {
+        "layer": "lighting",
+        "operations": 0,
+        "purpose": "concealed warm guidance and restrained soul accents"
+      },
+      {
+        "layer": "clearance",
+        "operations": 2,
+        "purpose": "protected traversal portals applied last"
+      }
+    ],
+    "status": "STAGED_THEN_CANCELLED"
+  }
+}

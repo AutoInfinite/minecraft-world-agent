@@ -1,0 +1,45 @@
+{
+  "id": "three-oh-seven",
+  "title": "3:07",
+  "schemaVersion": 1,
+  "start": "apartment.bedroom",
+  "ending": "apartment.final-room",
+  "regions": [
+    {"id":"apartment.bedroom","role":"cold-open","bounds":{"min":[188,110,114],"max":[197,117,125]},"tags":["interior","safe","start"],"storyBeats":["wake-at-307"]},
+    {"id":"apartment.stairwell","role":"descent","bounds":{"min":[177,100,99],"max":[184,117,114]},"tags":["interior","liminal"],"storyBeats":["door-click","first-glimpse"]},
+    {"id":"building.courtyard","role":"pursuit","bounds":{"min":[199,100,103],"max":[206,108,125]},"tags":["exterior","clue"],"storyBeats":["lost-rabbit"]},
+    {"id":"neighborhood.street","role":"pursuit","bounds":{"min":[207,100,102],"max":[224,113,117]},"tags":["exterior","street"],"storyBeats":["one-corner-ahead"]},
+    {"id":"neighborhood.phone","role":"voice-clue","bounds":{"min":[225,100,99],"max":[232,107,106]},"tags":["interaction","false-voice"],"storyBeats":["payphone-message"]},
+    {"id":"neighborhood.playground","role":"dread-peak","bounds":{"min":[218,100,118],"max":[238,109,134]},"tags":["exterior","setpiece"],"storyBeats":["empty-swing"]},
+    {"id":"neighborhood.alley","role":"blackout","bounds":{"min":[199,100,126],"max":[217,108,134]},"tags":["exterior","return"],"storyBeats":["dont-turn-around"]},
+    {"id":"apartment.return","role":"reversal","bounds":{"min":[188,100,119],"max":[198,109,130]},"tags":["interior","truth"],"storyBeats":["son-is-home"]},
+    {"id":"apartment.final-room","role":"ending","bounds":{"min":[185,110,99],"max":[197,117,113]},"tags":["interior","ending"],"storyBeats":["something-followed"]}
+  ],
+  "routes": [
+    {"id":"bedroom-stairs","from":"apartment.bedroom","to":"apartment.stairwell","type":"main","bidirectional":false,"points":[[192,110,114],[192,110,102],[181,110,102]]},
+    {"id":"stairs-courtyard","from":"apartment.stairwell","to":"building.courtyard","type":"main","bidirectional":false,"points":[[181,100,112],[198,100,112],[205,100,112]]},
+    {"id":"courtyard-street","from":"building.courtyard","to":"neighborhood.street","type":"main","bidirectional":false,"points":[[205,100,112],[221,100,112]]},
+    {"id":"street-phone","from":"neighborhood.street","to":"neighborhood.phone","type":"main","bidirectional":false,"points":[[221,100,112],[228,100,112],[228,100,103]]},
+    {"id":"phone-playground","from":"neighborhood.phone","to":"neighborhood.playground","type":"main","bidirectional":false,"points":[[228,100,103],[234,100,103],[234,100,128]]},
+    {"id":"playground-alley","from":"neighborhood.playground","to":"neighborhood.alley","type":"main","bidirectional":false,"points":[[234,100,128],[207,100,128]]},
+    {"id":"alley-return","from":"neighborhood.alley","to":"apartment.return","type":"main","bidirectional":false,"points":[[207,100,128],[196,100,128],[196,100,124]]},
+    {"id":"return-ending","from":"apartment.return","to":"apartment.final-room","type":"main","bidirectional":false,"points":[[196,100,124],[181,100,124],[181,100,102],[181,110,102],[190,110,102]]}
+  ],
+  "landmarks": [
+    {"id":"clock-307","region":"apartment.bedroom","position":[192,111,121]},
+    {"id":"red-rabbit","region":"building.courtyard","position":[205,101,116]},
+    {"id":"dead-payphone","region":"neighborhood.phone","position":[228,101,103]},
+    {"id":"empty-swing","region":"neighborhood.playground","position":[230,101,128]}
+  ],
+  "cameras": [
+    {"id":"three07-bedroom","region":"apartment.bedroom","position":[190,112,123],"yaw":-145,"pitch":4,"fov":65,"hud":false,"time":19500,"weather":"rain"},
+    {"id":"three07-stairwell","region":"apartment.stairwell","position":[181,113,101],"yaw":180,"pitch":18,"fov":65,"hud":false,"time":19500,"weather":"rain"},
+    {"id":"three07-courtyard","region":"building.courtyard","position":[201,102,121],"yaw":-40,"pitch":2,"fov":70,"hud":false,"time":19500,"weather":"rain"},
+    {"id":"three07-street","region":"neighborhood.street","position":[211,102,111],"yaw":-90,"pitch":1,"fov":68,"hud":false,"time":19500,"weather":"rain"},
+    {"id":"three07-phone","region":"neighborhood.phone","position":[224,102,109],"yaw":-35,"pitch":3,"fov":60,"hud":false,"time":19500,"weather":"rain"},
+    {"id":"three07-playground","region":"neighborhood.playground","position":[220,103,132],"yaw":-75,"pitch":7,"fov":70,"hud":false,"time":19500,"weather":"rain"},
+    {"id":"three07-alley","region":"neighborhood.alley","position":[214,102,129],"yaw":90,"pitch":1,"fov":58,"hud":false,"time":19500,"weather":"rain"},
+    {"id":"three07-ending","region":"apartment.final-room","position":[188,112,103],"yaw":90,"pitch":3,"fov":55,"hud":false,"time":19500,"weather":"rain"}
+  ],
+  "storyBeats":["wake-at-307","door-click","first-glimpse","lost-rabbit","one-corner-ahead","payphone-message","empty-swing","dont-turn-around","son-is-home","something-followed"]
+}

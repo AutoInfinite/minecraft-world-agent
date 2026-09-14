@@ -1,0 +1,363 @@
+{
+  "at": "2026-09-14T09:11:06.524Z",
+  "status": "PASS",
+  "changes": [
+    {
+      "name": "village.gate",
+      "transactionId": "22a9048b-24c6-4ef0-a861-bd848e2a0f48",
+      "changedBlocks": 329,
+      "bounds": {
+        "min": [
+          100,
+          100,
+          118
+        ],
+        "max": [
+          114,
+          109,
+          132
+        ]
+      },
+      "checksum": "72fb1fd39b9a7193b45d2d1c836e973aea979d9ba6c44f636b136ef2765317eb"
+    },
+    {
+      "name": "village.square",
+      "transactionId": "8f706318-d853-4858-8056-6565e552b9ad",
+      "changedBlocks": 961,
+      "bounds": {
+        "min": [
+          96,
+          100,
+          70
+        ],
+        "max": [
+          126,
+          101,
+          100
+        ]
+      },
+      "checksum": "c143a5a3b04c2f5930dd1360fe2b72f4c3cadf02bf95c7153c8b23cdcbc99380"
+    },
+    {
+      "name": "village.survivor_house",
+      "transactionId": "e9ef0992-9072-4040-afd8-0cf513665ffb",
+      "changedBlocks": 1673,
+      "bounds": {
+        "min": [
+          70,
+          100,
+          76
+        ],
+        "max": [
+          84,
+          114,
+          90
+        ]
+      },
+      "checksum": "4a864f6ac956c8adf1ed76046145a51a54af73b0b3795777bdb3cbc442c27052"
+    },
+    {
+      "name": "village.blacksmith",
+      "transactionId": "65260f96-a19d-4df4-95fc-9b8ac1620ae1",
+      "changedBlocks": 1700,
+      "bounds": {
+        "min": [
+          132,
+          100,
+          76
+        ],
+        "max": [
+          146,
+          114,
+          90
+        ]
+      },
+      "checksum": "143892448686fc996ca73d8246d4a1a9b1d184b6b4d0dde128c652bfc0d1f085"
+    },
+    {
+      "name": "village.church",
+      "transactionId": "27bb51e5-d7ef-4be7-ade3-c42968a6d438",
+      "changedBlocks": 2187,
+      "bounds": {
+        "min": [
+          66,
+          100,
+          104
+        ],
+        "max": [
+          84,
+          119,
+          118
+        ]
+      },
+      "checksum": "15853edd523ac1d7930789b7fc1a67d1a8cce3bd7c8666810d5d85b90ae16956"
+    },
+    {
+      "name": "mine.entrance",
+      "transactionId": "b7e4eb50-c8c6-4d79-9493-bb62eaf081e2",
+      "changedBlocks": 961,
+      "bounds": {
+        "min": [
+          102,
+          100,
+          26
+        ],
+        "max": [
+          116,
+          109,
+          40
+        ]
+      },
+      "checksum": "b3c901c36d621ed19376f42e52d1365d6cabd416a8eb1f034430a2eacb62ffe2"
+    },
+    {
+      "name": "mine.chamber",
+      "transactionId": "e48748aa-6cdb-4baf-abf4-1f24abb178c7",
+      "changedBlocks": 1948,
+      "bounds": {
+        "min": [
+          98,
+          100,
+          2
+        ],
+        "max": [
+          120,
+          111,
+          24
+        ]
+      },
+      "checksum": "4fba81ca55b6932cea8e5475f761d5c9188cc7bbbccb874ead26d1c0236dd022"
+    },
+    {
+      "name": "route:gate-square:1",
+      "transactionId": "981d0141-aa3f-4744-b9e3-9e9d3fc0073a",
+      "changedBlocks": 86,
+      "bounds": {
+        "min": [
+          105,
+          100,
+          98
+        ],
+        "max": [
+          109,
+          100,
+          120
+        ]
+      }
+    },
+    {
+      "name": "route:survivor-route:1",
+      "transactionId": "17cfa398-d2e3-4b32-bb35-172c20c2108e",
+      "changedBlocks": 55,
+      "bounds": {
+        "min": [
+          82,
+          100,
+          81
+        ],
+        "max": [
+          98,
+          100,
+          85
+        ]
+      }
+    },
+    {
+      "name": "route:smith-route:1",
+      "transactionId": "57fdc7cf-70d9-492f-808a-a11f509da93e",
+      "changedBlocks": 25,
+      "bounds": {
+        "min": [
+          124,
+          100,
+          81
+        ],
+        "max": [
+          134,
+          100,
+          85
+        ]
+      }
+    },
+    {
+      "name": "route:church-route:1",
+      "transactionId": "5bce02f5-090c-43d2-a8db-ebecb28e9bbf",
+      "changedBlocks": 40,
+      "bounds": {
+        "min": [
+          88,
+          100,
+          88
+        ],
+        "max": [
+          98,
+          100,
+          92
+        ]
+      }
+    },
+    {
+      "name": "route:church-route:2",
+      "transactionId": "6c2141d5-eede-4d5c-a9e7-9734290a1d5e",
+      "changedBlocks": 105,
+      "bounds": {
+        "min": [
+          88,
+          100,
+          88
+        ],
+        "max": [
+          92,
+          100,
+          113
+        ]
+      }
+    },
+    {
+      "name": "route:church-route:3",
+      "transactionId": "2d1c042c-9c6f-4b36-8869-63f67915cd34",
+      "changedBlocks": 15,
+      "bounds": {
+        "min": [
+          82,
+          100,
+          109
+        ],
+        "max": [
+          92,
+          100,
+          113
+        ]
+      }
+    },
+    {
+      "name": "route:mine-route:1",
+      "transactionId": "54163f23-5808-4b3a-a7c7-59e2e3e1ee01",
+      "changedBlocks": 86,
+      "bounds": {
+        "min": [
+          108,
+          100,
+          53
+        ],
+        "max": [
+          112,
+          100,
+          72
+        ]
+      }
+    },
+    {
+      "name": "route:road-entrance:1",
+      "transactionId": "846a933e-c2bc-414a-8399-e6a751e87025",
+      "changedBlocks": 70,
+      "bounds": {
+        "min": [
+          108,
+          100,
+          39
+        ],
+        "max": [
+          112,
+          100,
+          57
+        ]
+      }
+    },
+    {
+      "name": "route:road-entrance:2",
+      "transactionId": "2aa89187-31ad-4661-8fca-4fd54970da0e",
+      "changedBlocks": 5,
+      "bounds": {
+        "min": [
+          107,
+          100,
+          39
+        ],
+        "max": [
+          112,
+          100,
+          43
+        ]
+      }
+    },
+    {
+      "name": "route:road-entrance:3",
+      "transactionId": "ccd57c7e-6057-4ca1-b5ae-f829b5bfea8c",
+      "changedBlocks": 5,
+      "bounds": {
+        "min": [
+          107,
+          100,
+          38
+        ],
+        "max": [
+          111,
+          100,
+          43
+        ]
+      }
+    },
+    {
+      "name": "route:entrance-chamber:1",
+      "transactionId": "9724981d-c9d2-4431-b127-3c9c10c4a245",
+      "changedBlocks": 35,
+      "bounds": {
+        "min": [
+          107,
+          100,
+          22
+        ],
+        "max": [
+          111,
+          100,
+          28
+        ]
+      }
+    },
+    {
+      "name": "square:dry-well",
+      "transactionId": "bf58feb9-fe23-4246-ab7d-3cb9a62b8b0a",
+      "changedBlocks": 40,
+      "bounds": {
+        "min": [
+          111,
+          100,
+          85
+        ],
+        "max": [
+          115,
+          104,
+          89
+        ]
+      }
+    }
+  ],
+  "checks": [
+    "rotated mirrored module through higher-level MCP, reconciliation and exact undo",
+    "MCP semantic lookup and SQLite spatial query match canonical IDs",
+    "every route center has solid footing and two-block head clearance in actual world"
+  ],
+  "limitations": [
+    "No visual review or human playtest",
+    "Paths and structures are a first geometry pass; no organic surrounding terrain"
+  ],
+  "model": {
+    "errors": [],
+    "warnings": [],
+    "reachable": [
+      "village.gate",
+      "village.square",
+      "village.survivor_house",
+      "village.blacksmith",
+      "village.church",
+      "mine.road",
+      "mine.entrance",
+      "mine.chamber"
+    ]
+  },
+  "moduleLibrary": {
+    "count": 12,
+    "checksum": "4b0dd23290882691d73e3c34c2654fb157faedc527b8d2f61b6b96f40b976b2d"
+  }
+}

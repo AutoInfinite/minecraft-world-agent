@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "style": "abandoned mining village: layered stone foundations, exposed timber frames, readable silhouettes, practical interiors, warm wayfinding light, restrained decay",
+  "id": "mine-tunnel",
+  "size": [
+    15,
+    10,
+    15
+  ],
+  "anchors": {
+    "entrance": [
+      7,
+      1,
+      14
+    ],
+    "exit": [
+      7,
+      1,
+      0
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          1
+        ],
+        "max": [
+          2,
+          7,
+          1
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          12,
+          1,
+          1
+        ],
+        "max": [
+          12,
+          7,
+          1
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          7,
+          1
+        ],
+        "max": [
+          12,
+          7,
+          1
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          5
+        ],
+        "max": [
+          2,
+          7,
+          5
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          12,
+          1,
+          5
+        ],
+        "max": [
+          12,
+          7,
+          5
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          7,
+          5
+        ],
+        "max": [
+          12,
+          7,
+          5
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          9
+        ],
+        "max": [
+          2,
+          7,
+          9
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          12,
+          1,
+          9
+        ],
+        "max": [
+          12,
+          7,
+          9
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          7,
+          9
+        ],
+        "max": [
+          12,
+          7,
+          9
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          13
+        ],
+        "max": [
+          2,
+          7,
+          13
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          12,
+          1,
+          13
+        ],
+        "max": [
+          12,
+          7,
+          13
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          7,
+          13
+        ],
+        "max": [
+          12,
+          7,
+          13
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          3,
+          1,
+          3
+        ]
+      },
+      "block": "minecraft:gravel"
+    },
+    {
+      "bounds": {
+        "min": [
+          11,
+          6,
+          5
+        ],
+        "max": [
+          11,
+          6,
+          5
+        ]
+      },
+      "block": "minecraft:soul_lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          5,
+          10
+        ],
+        "max": [
+          3,
+          5,
+          10
+        ]
+      },
+      "block": "minecraft:cobweb"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          8
+        ],
+        "max": [
+          8,
+          1,
+          10
+        ]
+      },
+      "block": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "seed": 20260914
+}

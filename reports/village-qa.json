@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-14T21:07:18.223Z",
+  "status": "PASS",
+  "profile": "standing player; four-neighbor walking; solid full blocks, two-air-block clearance; no jump/collision-shape simulation",
+  "checks": [
+    "start spawn and checkpoint have solid footing and two-block clearance",
+    "all eight canonical locations reachable on actual world geometry",
+    "road and mine entrance are mandatory on the walking path to the boss",
+    "checkpoint to boss walk is at most 80 blocks"
+  ],
+  "distances": {
+    "village.gate": 0,
+    "village.square": 49,
+    "village.survivor_house": 74,
+    "village.blacksmith": 79,
+    "village.church": 89,
+    "mine.road": 78,
+    "mine.entrance": 99,
+    "mine.chamber": 123
+  },
+  "manualPlaytest": "NOT_RUN",
+  "screenshots": "NOT_CAPTURED",
+  "checkpointToBoss": 30,
+  "canonicalProgression": {
+    "status": "PASS",
+    "coverage": "canonical Java transitions + file persistence + physical world prompts on real plugin; NOT player movement/death listener integration",
+    "checks": 9,
+    "worldInteractionMarkers": 4,
+    "ok": true,
+    "requestId": "d7cdb4ec-82f6-41aa-a28c-85b5c97585ca"
+  },
+  "runtime": {
+    "onlinePlayers": 1,
+    "savedPlayers": 1,
+    "bossPhase": 0,
+    "ok": true,
+    "requestId": "1a1e1654-e170-418e-8894-8299980f527d"
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "id": "ruined-house",
+  "size": [
+    11,
+    12,
+    11
+  ],
+  "anchors": {
+    "entrance": [
+      5,
+      1,
+      0
+    ],
+    "exit": [
+      5,
+      1,
+      10
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          10,
+          5,
+          10
+        ]
+      },
+      "block": "minecraft:spruce_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          9,
+          4,
+          9
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          4,
+          1,
+          0
+        ],
+        "max": [
+          6,
+          3,
+          0
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          4,
+          1,
+          10
+        ],
+        "max": [
+          6,
+          3,
+          10
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          10,
+          0,
+          10
+        ]
+      },
+      "block": "minecraft:cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          6,
+          0
+        ],
+        "max": [
+          10,
+          6,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          7,
+          0
+        ],
+        "max": [
+          9,
+          7,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          8,
+          0
+        ],
+        "max": [
+          8,
+          8,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          9,
+          0
+        ],
+        "max": [
+          7,
+          9,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          4,
+          10,
+          0
+        ],
+        "max": [
+          6,
+          10,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          11,
+          0
+        ],
+        "max": [
+          5,
+          11,
+          10
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          0
+        ],
+        "max": [
+          0,
+          5,
+          0
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          10
+        ],
+        "max": [
+          0,
+          5,
+          10
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          10,
+          1,
+          0
+        ],
+        "max": [
+          10,
+          5,
+          0
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          10,
+          1,
+          10
+        ],
+        "max": [
+          10,
+          5,
+          10
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          3,
+          3
+        ],
+        "max": [
+          0,
+          4,
+          7
+        ]
+      },
+      "block": "minecraft:glass"
+    },
+    {
+      "bounds": {
+        "min": [
+          10,
+          3,
+          3
+        ],
+        "max": [
+          10,
+          4,
+          7
+        ]
+      },
+      "block": "minecraft:glass"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          4,
+          2
+        ],
+        "max": [
+          2,
+          4,
+          2
+        ]
+      },
+      "block": "minecraft:sea_lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          2,
+          2
+        ],
+        "max": [
+          0,
+          5,
+          7
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          6,
+          2
+        ],
+        "max": [
+          6,
+          10,
+          8
+        ]
+      },
+      "block": "minecraft:air"
+    }
+  ],
+  "seed": 20260914
+}

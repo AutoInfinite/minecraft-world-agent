@@ -1,0 +1,5 @@
+# Copy this stanza into your MCP client after building.
+# This project does not modify global Codex settings automatically.
+[mcp_servers.minecraft_world_agent]
+command = "node"
+args = ["C:/Users/delik/Desktop/minecraft-world-agent/dist/apps/mcp-server/index.js"]

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.tools/
+.gradle/
+**/build/
+.runtime/
+server-dev/*
+!server-dev/server.properties
+*.log
+.env
+*.zip
+*.jar
+*.db*

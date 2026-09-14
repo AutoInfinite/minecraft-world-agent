@@ -1,0 +1,258 @@
+{
+  "at": "2026-09-14T21:46:00.217Z",
+  "status": "PASS",
+  "map": "three-oh-seven",
+  "targetMinutes": 10,
+  "manualPlaytest": "NOT_RUN",
+  "screenshots": "NOT_CAPTURED",
+  "checks": [
+    "12 story checkpoints have footing and two-block clearance",
+    "courtyard, street, phone, playground, alley and return door share one actual walkable exterior route",
+    "all ten stair elevations exist with two-block vertical clearance"
+  ],
+  "checkpointResults": [
+    {
+      "position": [
+        195,
+        110,
+        121
+      ],
+      "floor": "minecraft:stone_bricks",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        192,
+        110,
+        102
+      ],
+      "floor": "minecraft:polished_andesite",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        181,
+        110,
+        102
+      ],
+      "floor": "minecraft:polished_andesite",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        183,
+        100,
+        113
+      ],
+      "floor": "minecraft:stone_bricks",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        196,
+        100,
+        112
+      ],
+      "floor": "minecraft:stone_bricks",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        205,
+        100,
+        112
+      ],
+      "floor": "minecraft:mossy_cobblestone",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        221,
+        100,
+        112
+      ],
+      "floor": "minecraft:cobbled_deepslate",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        228,
+        100,
+        103
+      ],
+      "floor": "minecraft:polished_deepslate",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        234,
+        100,
+        112
+      ],
+      "floor": "minecraft:cobbled_deepslate",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        234,
+        100,
+        128
+      ],
+      "floor": "minecraft:rooted_dirt",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        207,
+        100,
+        128
+      ],
+      "floor": "minecraft:cobbled_deepslate",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        196,
+        100,
+        124
+      ],
+      "floor": "minecraft:stone_bricks",
+      "feet": "minecraft:air",
+      "head": "minecraft:air"
+    }
+  ],
+  "profile": "actual block reads; full-block exterior BFS; authored stair-state continuity; no renderer or collision-shape simulation",
+  "model": {
+    "regions": 9,
+    "routes": 8,
+    "warnings": []
+  },
+  "exteriorDistances": {
+    "courtyard": 9,
+    "street": 25,
+    "phone": 41,
+    "playground": 54,
+    "alley": 27,
+    "return": 18
+  },
+  "stair": [
+    {
+      "position": [
+        180,
+        101,
+        113
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        102,
+        112
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        103,
+        111
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        104,
+        110
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        105,
+        109
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        106,
+        108
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        107,
+        107
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        108,
+        106
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        109,
+        105
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    },
+    {
+      "position": [
+        180,
+        110,
+        104
+      ],
+      "step": "minecraft:stone_brick_stairs",
+      "above": "minecraft:air",
+      "head": "minecraft:air"
+    }
+  ],
+  "runtime": {
+    "onlinePlayers": 0,
+    "savedPlayers": 1,
+    "bossPhase": 0,
+    "ok": true,
+    "requestId": "26aad1a9-1959-49a8-bb0f-5bd002580c19"
+  }
+}

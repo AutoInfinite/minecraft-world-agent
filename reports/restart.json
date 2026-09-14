@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-14T09:22:10.525Z",
+  "status": "PASS",
+  "checks": [
+    "committed blocks persisted across clean Paper restart",
+    "undo ledger survived restart",
+    "all 27 original block states restored through MCP"
+  ]
+}

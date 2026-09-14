@@ -1,0 +1,36 @@
+import {spawn} from 'node:child_process';
+import {readFile,writeFile,mkdir,copyFile,cp,stat} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');process.chdir(root);
+async function run(cmd,args,options={}){await new Promise((resolve,reject)=>{const p=spawn(cmd,args,{cwd:root,stdio:'inherit',windowsHide:true,...options});p.on('error',reject);p.on('exit',c=>c===0?resolve():reject(new Error(`${cmd} exited ${c}`)));});}
+const qa=JSON.parse(await readFile('reports/village-qa.json','utf8'));if(qa.status!=='PASS')throw new Error('Actual village geometry QA must pass before prototype export');
+const stamp=new Date().toISOString().replace(/[:.]/g,'-');const name=`village-prototype-${stamp}`;
+const archive=`${name}-world.tar`,stage=path.join(root,'.runtime/exports',name);await mkdir(stage,{recursive:true});
+await run('java',['scripts/ArchiveWorld.java',archive]);
+await run('tar',['-xf',path.join(root,'.runtime',archive),'-C',stage]);
+await mkdir(path.join(stage,'plugins/WorldAgent'),{recursive:true});
+for(const file of ['world-agent-0.1.0.jar','worldedit-bukkit-7.4.5.jar'])await copyFile(path.join(root,'server-dev/plugins',file),path.join(stage,'plugins',file));
+for(const file of ['policy.json','world-model.json','dialogue.json','resource-pack.zip','resource-pack.sha1'])await copyFile(path.join(root,'server-dev/plugins/WorldAgent',file),path.join(stage,'plugins/WorldAgent',file));
+await copyFile('server-dev/paper.jar',path.join(stage,'paper.jar'));
+await copyFile('server-dev/server.properties',path.join(stage,'server.properties'));
+await copyFile('toolchain.lock.json',path.join(stage,'toolchain.lock.json'));
+await cp('reports',path.join(stage,'qa'),{recursive:true,filter:source=>!source.endsWith('.log')});
+await copyFile('docs/GAMEPLAY.md',path.join(stage,'GAMEPLAY.md'));
+await copyFile('projects/abandoned-mine/tests/MANUAL_PLAYTEST.md',path.join(stage,'MANUAL_PLAYTEST.md'));
+await writeFile(path.join(stage,'start.mjs'),`import {readFile,writeFile,access} from 'node:fs/promises';
+import {randomBytes} from 'node:crypto';
+import {spawn} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+process.chdir(path.dirname(fileURLToPath(import.meta.url)));
+if(!process.argv.includes('--accept-eula'))throw new Error('Read https://aka.ms/MinecraftEULA; run node start.mjs --accept-eula if you agree.');
+await writeFile('eula.txt','eula=true\\n');
+try{await access('plugins/WorldAgent/token');}catch{await writeFile('plugins/WorldAgent/token',randomBytes(32).toString('hex'),{mode:0o600});}
+const p=spawn('java',['-Xms512M','-Xmx2G','-jar','paper.jar','--nogui'],{stdio:'inherit',windowsHide:true});p.on('exit',c=>process.exitCode=c??1);
+`);
+await writeFile(path.join(stage,'README.md'),`# The Village Below — INTERNAL PROTOTYPE\n\nThis is not an approved release. Human playtest and renderer screenshots are outstanding.\n\nUse Node 24.14.0 and Java 25.0.1+8. Read the Minecraft EULA, then run \`node start.mjs --accept-eula\`. Connect a Minecraft Java 26.2 client to localhost:25565 and type \`/village start\`. Follow GAMEPLAY.md. Stop with \`stop\` in the server console.\n\nWorld, WorldAgent plugin, WorldEdit, pinned Paper and small resource pack are included for private testing. Tokens and development player/transaction data are excluded. A fresh local token is generated on first start. The world is a flat geometry prototype without a terrain art pass.\n\nThird-party components retain their upstream licenses: Paper (https://github.com/PaperMC/Paper), WorldEdit (https://github.com/EngineHub/WorldEdit). No distribution or publication approval is implied.\n`);
+const zip=path.join(root,'.runtime/exports',`${name}.zip`);await run('jar',['--create','--file',zip,'--no-manifest','-C',stage,'.']);
+const bytes=await readFile(zip);const manifest={at:new Date().toISOString(),status:'PROTOTYPE_ONLY',zip,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),worldArchive:archive,manualPlaytest:'NOT_RUN',screenshots:'NOT_CAPTURED',excluded:['tokens','development player state','development transaction ledger','node_modules'],qa:'reports/village-qa.json'};
+await writeFile('reports/export.json',JSON.stringify(manifest,null,2));console.log(JSON.stringify(manifest,null,2));

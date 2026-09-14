@@ -1,0 +1,1049 @@
+{
+  "at": "2026-09-14T21:06:43.123Z",
+  "status": "PARTIAL",
+  "mode": "legacy-compatible",
+  "style": "abandoned mining village with strong silhouettes, facade depth, clustered weathering, environmental story and readable focal lighting",
+  "regions": [
+    {
+      "region": "village.gate",
+      "module": "village-gate",
+      "status": "APPLIED",
+      "plannedOperations": 11
+    },
+    {
+      "region": "village.square",
+      "module": "square",
+      "status": "APPLIED",
+      "plannedOperations": 13
+    },
+    {
+      "region": "village.survivor_house",
+      "module": "survivor-house",
+      "status": "ALREADY_RECONCILED",
+      "plannedOperations": 7
+    },
+    {
+      "region": "village.blacksmith",
+      "module": "blacksmith",
+      "status": "ALREADY_RECONCILED",
+      "plannedOperations": 10
+    },
+    {
+      "region": "village.church",
+      "module": "church",
+      "status": "ALREADY_RECONCILED",
+      "plannedOperations": 23
+    },
+    {
+      "region": "mine.entrance",
+      "module": "mine-tunnel",
+      "status": "APPLIED",
+      "plannedOperations": 23
+    },
+    {
+      "region": "mine.chamber",
+      "module": "boss-chamber",
+      "status": "PARTIAL",
+      "plannedOperations": 55
+    }
+  ],
+  "transactions": [
+    {
+      "region": "village.gate",
+      "label": "region",
+      "transactionId": "c3c0a9a2-4d1d-4864-b3e7-d6bedf6e45b8",
+      "bounds": {
+        "min": [
+          100,
+          100,
+          118
+        ],
+        "max": [
+          114,
+          109,
+          132
+        ]
+      },
+      "operations": 11,
+      "changedBlocks": 7
+    },
+    {
+      "region": "village.square",
+      "label": "item-0",
+      "transactionId": "7fd8458b-d82d-4206-b5fe-b19a76a08b76",
+      "bounds": {
+        "min": [
+          101,
+          101,
+          75
+        ],
+        "max": [
+          104,
+          101,
+          78
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 16
+    },
+    {
+      "region": "village.square",
+      "label": "item-1",
+      "transactionId": "a449828c-6714-407b-99f1-2d2ab1690fcb",
+      "bounds": {
+        "min": [
+          118,
+          101,
+          91
+        ],
+        "max": [
+          121,
+          101,
+          94
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 16
+    },
+    {
+      "region": "village.square",
+      "label": "item-2",
+      "transactionId": "9c9c42d7-6966-4d92-9e63-f6029d15f26b",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          83
+        ],
+        "max": [
+          114,
+          101,
+          83
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 4
+    },
+    {
+      "region": "village.square",
+      "label": "item-3",
+      "transactionId": "5f5222a3-afd2-48e5-8416-5116d225db39",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          87
+        ],
+        "max": [
+          114,
+          101,
+          87
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 7
+    },
+    {
+      "region": "village.square",
+      "label": "item-4",
+      "transactionId": "41f12bcf-d0db-462b-8f93-e793234e5377",
+      "bounds": {
+        "min": [
+          101,
+          100,
+          75
+        ],
+        "max": [
+          104,
+          100,
+          78
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 16
+    },
+    {
+      "region": "village.square",
+      "label": "item-5",
+      "transactionId": "3f613700-b305-4039-b31a-f926db2226fb",
+      "bounds": {
+        "min": [
+          118,
+          100,
+          91
+        ],
+        "max": [
+          121,
+          100,
+          94
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 16
+    },
+    {
+      "region": "village.square",
+      "label": "item-6",
+      "transactionId": "a35b3f66-3390-488c-8016-a8db7500bc71",
+      "bounds": {
+        "min": [
+          108,
+          100,
+          83
+        ],
+        "max": [
+          114,
+          100,
+          83
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 6
+    },
+    {
+      "region": "village.square",
+      "label": "item-7",
+      "transactionId": "e25230fe-afcf-4827-b4d0-e7e806a938ea",
+      "bounds": {
+        "min": [
+          108,
+          100,
+          87
+        ],
+        "max": [
+          114,
+          100,
+          87
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "village.square",
+      "label": "item-10",
+      "transactionId": "cf12a8c9-8190-4d99-bc5a-c412974ec9d0",
+      "bounds": {
+        "min": [
+          100,
+          101,
+          90
+        ],
+        "max": [
+          103,
+          101,
+          93
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "village.square",
+      "label": "item-11",
+      "transactionId": "e33a20fe-73ef-46e4-bf7b-7d89ba16520c",
+      "bounds": {
+        "min": [
+          102,
+          101,
+          92
+        ],
+        "max": [
+          102,
+          101,
+          92
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.entrance",
+      "label": "item-0",
+      "transactionId": "ed5f8f06-e23a-4e7e-8fb5-70636ca86221",
+      "bounds": {
+        "min": [
+          103,
+          101,
+          27
+        ],
+        "max": [
+          105,
+          101,
+          29
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 9
+    },
+    {
+      "region": "mine.entrance",
+      "label": "item-4",
+      "transactionId": "66e3aec5-b250-4ff2-b2f9-5e841589f4c7",
+      "bounds": {
+        "min": [
+          103,
+          100,
+          27
+        ],
+        "max": [
+          105,
+          100,
+          29
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 9
+    },
+    {
+      "region": "mine.entrance",
+      "label": "item-5",
+      "transactionId": "52a22d1f-896e-4461-a247-4016a845d88e",
+      "bounds": {
+        "min": [
+          108,
+          100,
+          34
+        ],
+        "max": [
+          110,
+          100,
+          36
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 9
+    },
+    {
+      "region": "mine.entrance",
+      "label": "item-6",
+      "transactionId": "ef59b610-322e-46b4-9d88-0806bfcd401c",
+      "bounds": {
+        "min": [
+          107,
+          100,
+          29
+        ],
+        "max": [
+          111,
+          100,
+          29
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 5
+    },
+    {
+      "region": "mine.entrance",
+      "label": "item-7",
+      "transactionId": "1bbabe20-f861-48e3-a83f-142d8b8f1ab1",
+      "bounds": {
+        "min": [
+          108,
+          100,
+          33
+        ],
+        "max": [
+          110,
+          100,
+          34
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 6
+    },
+    {
+      "region": "mine.entrance",
+      "label": "item-8",
+      "transactionId": "5105ccc0-2bff-4bbc-8cad-83d0d3783fe3",
+      "bounds": {
+        "min": [
+          103,
+          101,
+          28
+        ],
+        "max": [
+          103,
+          101,
+          28
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-0",
+      "transactionId": "bc05b696-b6d5-4dda-a50f-84a101cfa0dd",
+      "bounds": {
+        "min": [
+          100,
+          101,
+          4
+        ],
+        "max": [
+          118,
+          101,
+          4
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 16
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-1",
+      "transactionId": "ba88bb4b-f051-4cb5-8ab0-bc050a174b4b",
+      "bounds": {
+        "min": [
+          100,
+          101,
+          22
+        ],
+        "max": [
+          118,
+          101,
+          22
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 16
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-2",
+      "transactionId": "6282cc33-850d-4161-b9de-30e2058214cc",
+      "bounds": {
+        "min": [
+          100,
+          101,
+          5
+        ],
+        "max": [
+          100,
+          101,
+          21
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 17
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-3",
+      "transactionId": "9a5543e6-70d3-4c42-a743-1a67e6fc3a58",
+      "bounds": {
+        "min": [
+          118,
+          101,
+          5
+        ],
+        "max": [
+          118,
+          101,
+          21
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 17
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-5",
+      "transactionId": "fa76d29d-11b6-43f6-a923-e0413f3965d8",
+      "bounds": {
+        "min": [
+          101,
+          101,
+          12
+        ],
+        "max": [
+          117,
+          101,
+          14
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 42
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-6",
+      "transactionId": "11ff019f-e2f1-4d36-8be5-310a65000179",
+      "bounds": {
+        "min": [
+          102,
+          101,
+          6
+        ],
+        "max": [
+          102,
+          101,
+          6
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-8",
+      "transactionId": "fd1223ce-1b17-44db-8d17-e750e60215b0",
+      "bounds": {
+        "min": [
+          102,
+          101,
+          20
+        ],
+        "max": [
+          102,
+          101,
+          20
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-12",
+      "transactionId": "d8e23787-b042-4d4c-950c-92b52797a09e",
+      "bounds": {
+        "min": [
+          116,
+          101,
+          6
+        ],
+        "max": [
+          116,
+          101,
+          6
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-14",
+      "transactionId": "c4b67534-24b5-4f38-9612-27a7bb142707",
+      "bounds": {
+        "min": [
+          116,
+          101,
+          20
+        ],
+        "max": [
+          116,
+          101,
+          20
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-15",
+      "transactionId": "186e260a-dedf-4c08-b249-66079ee4ae9b",
+      "bounds": {
+        "min": [
+          101,
+          101,
+          6
+        ],
+        "max": [
+          106,
+          101,
+          10
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 29
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-16",
+      "transactionId": "76bc70ee-1ad1-478d-be4a-3d34988e4be3",
+      "bounds": {
+        "min": [
+          112,
+          101,
+          16
+        ],
+        "max": [
+          117,
+          101,
+          20
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 29
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-17",
+      "transactionId": "7d78f3e6-c6ed-4712-a1b3-61794ec4df8b",
+      "bounds": {
+        "min": [
+          100,
+          100,
+          4
+        ],
+        "max": [
+          118,
+          100,
+          4
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 19
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-18",
+      "transactionId": "9b3b4146-ce24-4339-8021-19fe7b8906c5",
+      "bounds": {
+        "min": [
+          100,
+          100,
+          22
+        ],
+        "max": [
+          118,
+          100,
+          22
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 19
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-19",
+      "transactionId": "c5a47b0c-1dd6-4d07-b783-c0b910e7fd5a",
+      "bounds": {
+        "min": [
+          100,
+          100,
+          5
+        ],
+        "max": [
+          100,
+          100,
+          21
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 17
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-20",
+      "transactionId": "6e47f0a4-59d4-44d7-bdd7-575acf64f68c",
+      "bounds": {
+        "min": [
+          118,
+          100,
+          5
+        ],
+        "max": [
+          118,
+          100,
+          21
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 17
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-21",
+      "transactionId": "dac47150-c20f-43c9-8560-7864527bad59",
+      "bounds": {
+        "min": [
+          108,
+          100,
+          5
+        ],
+        "max": [
+          110,
+          100,
+          21
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 51
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-22",
+      "transactionId": "9975e738-2ed5-4c0b-8236-89414b84479c",
+      "bounds": {
+        "min": [
+          101,
+          100,
+          12
+        ],
+        "max": [
+          117,
+          100,
+          14
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 42
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-23",
+      "transactionId": "fde07f9c-48ed-4bd1-8e1d-e0af29bfc5ba",
+      "bounds": {
+        "min": [
+          102,
+          100,
+          6
+        ],
+        "max": [
+          102,
+          100,
+          6
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-24",
+      "transactionId": "2bb2ae6e-acce-428e-a341-0a9f4b34857f",
+      "bounds": {
+        "min": [
+          102,
+          100,
+          13
+        ],
+        "max": [
+          102,
+          100,
+          13
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-25",
+      "transactionId": "8fa6b3f4-7e1e-4d99-bd72-ccf4599dd405",
+      "bounds": {
+        "min": [
+          102,
+          100,
+          20
+        ],
+        "max": [
+          102,
+          100,
+          20
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-26",
+      "transactionId": "11ccc55f-486c-4ec5-8afe-6050f73a148a",
+      "bounds": {
+        "min": [
+          109,
+          100,
+          6
+        ],
+        "max": [
+          109,
+          100,
+          6
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-27",
+      "transactionId": "9aa9b334-a32e-4fe2-9de1-9e9201afc474",
+      "bounds": {
+        "min": [
+          109,
+          100,
+          13
+        ],
+        "max": [
+          109,
+          100,
+          13
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-28",
+      "transactionId": "c9db2936-d826-450e-829a-4288e6b92259",
+      "bounds": {
+        "min": [
+          109,
+          100,
+          20
+        ],
+        "max": [
+          109,
+          100,
+          20
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-29",
+      "transactionId": "dc9f7969-9231-4174-8de1-92041d2c8ce1",
+      "bounds": {
+        "min": [
+          116,
+          100,
+          6
+        ],
+        "max": [
+          116,
+          100,
+          6
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-30",
+      "transactionId": "a17cfa9f-2eb9-431c-a91f-bedb7205bc9a",
+      "bounds": {
+        "min": [
+          116,
+          100,
+          13
+        ],
+        "max": [
+          116,
+          100,
+          13
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-31",
+      "transactionId": "63a4ac0d-ead5-4ab5-9cf1-ec11e2a7730d",
+      "bounds": {
+        "min": [
+          116,
+          100,
+          20
+        ],
+        "max": [
+          116,
+          100,
+          20
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-32",
+      "transactionId": "6fb44c85-8601-4d66-845b-e8937676a2ab",
+      "bounds": {
+        "min": [
+          101,
+          100,
+          6
+        ],
+        "max": [
+          106,
+          100,
+          10
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 30
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-33",
+      "transactionId": "f89876f1-a236-4b7a-95ad-11027437af24",
+      "bounds": {
+        "min": [
+          112,
+          100,
+          16
+        ],
+        "max": [
+          117,
+          100,
+          20
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 30
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-34",
+      "transactionId": "6bc91849-dd5c-4f2c-9a52-94b7277e9dd7",
+      "bounds": {
+        "min": [
+          101,
+          101,
+          6
+        ],
+        "max": [
+          101,
+          105,
+          6
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-36",
+      "transactionId": "64d53603-5d22-45e3-82dd-d5b62d0e53d6",
+      "bounds": {
+        "min": [
+          101,
+          101,
+          12
+        ],
+        "max": [
+          101,
+          105,
+          12
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-42",
+      "transactionId": "4a3312cd-efe3-427b-9558-54ea7ca015c7",
+      "bounds": {
+        "min": [
+          117,
+          101,
+          12
+        ],
+        "max": [
+          117,
+          105,
+          12
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-44",
+      "transactionId": "f08a50a2-f75c-41ae-a290-4a049aded1d0",
+      "bounds": {
+        "min": [
+          117,
+          101,
+          18
+        ],
+        "max": [
+          117,
+          105,
+          18
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 1
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-48",
+      "transactionId": "bc19732b-048f-4221-a476-0deeabb102a4",
+      "bounds": {
+        "min": [
+          107,
+          101,
+          10
+        ],
+        "max": [
+          111,
+          102,
+          10
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 6
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-49",
+      "transactionId": "e6d95508-797d-4bf1-9e4c-457bc6891e6b",
+      "bounds": {
+        "min": [
+          107,
+          101,
+          16
+        ],
+        "max": [
+          111,
+          102,
+          16
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 6
+    },
+    {
+      "region": "mine.chamber",
+      "label": "item-54",
+      "transactionId": "9078e951-9178-4e86-b6e4-e167b6356a2f",
+      "bounds": {
+        "min": [
+          108,
+          101,
+          2
+        ],
+        "max": [
+          110,
+          103,
+          13
+        ]
+      },
+      "operations": 1,
+      "changedBlocks": 6
+    }
+  ],
+  "checks": [
+    "all applied edits used staged transactions, unchanged dry-runs and exact preview hashes",
+    "church tower repair replaces the previous solid stained-glass volume with a hollow shell and thin window planes",
+    "masterwork overlays preserve declared three-wide, three-high portal planes"
+  ],
+  "limitations": [
+    "Automated block reconciliation is not a Minecraft renderer screenshot or human visual review",
+    "1 region(s) retained entity-occupied operations for a safe later retry"
+  ]
+}

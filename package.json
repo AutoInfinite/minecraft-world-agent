@@ -1,0 +1,25 @@
+{
+  "name": "minecraft-world-agent", "version": "0.1.0", "private": true, "type": "module",
+  "engines": {"node": ">=24.14.0 <25"},
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/packages/test-scenarios/unit.test.js",
+    "test:integration": "npm run build && node dist/packages/test-scenarios/integration.js",
+    "mcp": "node dist/apps/mcp-server/index.js",
+    "setup": "node scripts/dev.mjs setup",
+    "deploy": "node scripts/dev.mjs deploy",
+    "start": "node scripts/dev.mjs start",
+    "dev": "node scripts/dev.mjs dev",
+    "snapshot": "node scripts/dev.mjs snapshot",
+    "demo": "npm run build && node dist/packages/test-scenarios/demo.js",
+    "polish:village": "npm run build && node dist/packages/test-scenarios/polish-village.js",
+    "repair:portals": "npm run build && node dist/packages/test-scenarios/repair-portals.js",
+    "masterwork:village": "npm run build && node dist/packages/test-scenarios/masterwork-village.js",
+    "build:threeam": "npm run build && node dist/packages/test-scenarios/build-three-oh-seven.js",
+    "qa:threeam": "npm run build && node dist/packages/test-scenarios/three-oh-seven-qa.js",
+    "test:builder-live": "npm run build && node dist/packages/test-scenarios/builder-smoke.js",
+    "export:prototype": "node scripts/export.mjs"
+  },
+  "dependencies": {"@modelcontextprotocol/sdk": "1.30.0", "zod": "4.6.5"},
+  "devDependencies": {"typescript": "7.0.2", "@types/node": "26.5.1"}
+}

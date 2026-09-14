@@ -1,0 +1,91 @@
+{
+  "at": "2026-09-14T09:21:59.252Z",
+  "path": "MCP SDK stdio client → TS MCP → authenticated HTTP → Paper → WorldEdit → world",
+  "checks": [
+    "19 discoverable MCP tools",
+    "canonical gameplay file-persistence self-test and small pack endpoint (not real-player integration)",
+    "begin, stage and dry-run do not mutate any fixture block",
+    "commit retry uses durable identical receipt",
+    "WorldEdit committed exact 824-block room",
+    "undo refuses to overwrite newer world edits",
+    "20 percent wall variation selects 74 deterministic blocks and undoes exactly",
+    "room rollback matches every original block state",
+    "MCP rejects outside, protected and excessive volume",
+    "bridge independently enforces token, Origin, bounds, protected regions, volume and allowlist",
+    "snapshot restore is staged then committed and matches original fixture",
+    "durable audit joins actor, prompt, tool, request, transaction and change"
+  ],
+  "server": {
+    "server": "26.2-123-5001879 (MC: 26.2)",
+    "world": "world",
+    "worldedit": "7.4.5+7590-b8dc4c1",
+    "policy": {
+      "world": "world",
+      "port": 38765,
+      "maxVolume": 8192,
+      "maxOperations": 128,
+      "buildZone": {
+        "min": [
+          0,
+          96,
+          0
+        ],
+        "max": [
+          255,
+          159,
+          255
+        ]
+      },
+      "protectedRegions": [
+        {
+          "min": [
+            30,
+            100,
+            30
+          ],
+          "max": [
+            34,
+            110,
+            34
+          ]
+        }
+      ],
+      "palette": [
+        "minecraft:air",
+        "minecraft:stone",
+        "minecraft:stone_bricks",
+        "minecraft:cracked_stone_bricks",
+        "minecraft:cobblestone",
+        "minecraft:mossy_cobblestone",
+        "minecraft:deepslate_bricks",
+        "minecraft:cracked_deepslate_bricks",
+        "minecraft:oak_planks",
+        "minecraft:spruce_planks",
+        "minecraft:oak_log",
+        "minecraft:spruce_log",
+        "minecraft:glass",
+        "minecraft:gravel",
+        "minecraft:dirt",
+        "minecraft:grass_block",
+        "minecraft:sea_lantern",
+        "minecraft:polished_andesite",
+        "minecraft:dark_oak_planks"
+      ]
+    },
+    "recoveryBlocked": false,
+    "ok": true,
+    "requestId": "4e2c6876-e301-4f10-8fcf-863d0e51d691"
+  },
+  "gameplay": {
+    "status": "PASS",
+    "coverage": "canonical Java transitions + file persistence on real plugin; NOT player movement/death listener integration",
+    "checks": 8,
+    "ok": true,
+    "requestId": "cb0a075e-1188-4866-b361-066748d2e879"
+  },
+  "baseline": "8729d77372b7a389ede3ee7e514b18a8eecd0633a9072b23dae5f3ae7dd3ad0c",
+  "room": "d92b1c98c764f0b2b743518cdeee553ef30f7e080e857517f55e28467b018c67",
+  "roomChangedBlocks": 824,
+  "final": "8729d77372b7a389ede3ee7e514b18a8eecd0633a9072b23dae5f3ae7dd3ad0c",
+  "status": "PASS"
+}

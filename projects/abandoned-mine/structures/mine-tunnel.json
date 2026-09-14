@@ -1,0 +1,143 @@
+{
+  "id": "mine-tunnel",
+  "size": [
+    15,
+    10,
+    15
+  ],
+  "anchors": {
+    "entrance": [
+      7,
+      1,
+      14
+    ],
+    "exit": [
+      7,
+      1,
+      0
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          14,
+          9,
+          14
+        ]
+      },
+      "block": "minecraft:deepslate_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          13,
+          8,
+          13
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          0
+        ],
+        "max": [
+          8,
+          3,
+          0
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          14
+        ],
+        "max": [
+          8,
+          3,
+          14
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          5
+        ],
+        "max": [
+          3,
+          6,
+          6
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          11,
+          1,
+          5
+        ],
+        "max": [
+          12,
+          6,
+          6
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          6,
+          5
+        ],
+        "max": [
+          11,
+          7,
+          6
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          5,
+          1
+        ],
+        "max": [
+          2,
+          5,
+          1
+        ]
+      },
+      "block": "minecraft:sea_lantern"
+    }
+  ],
+  "seed": 20260914
+}

@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "style": "abandoned mining village: layered stone foundations, exposed timber frames, readable silhouettes, practical interiors, warm wayfinding light, restrained decay",
+  "id": "square",
+  "size": [
+    31,
+    5,
+    31
+  ],
+  "anchors": {
+    "north": [
+      14,
+      1,
+      0
+    ],
+    "south": [
+      11,
+      1,
+      30
+    ],
+    "west": [
+      0,
+      1,
+      13
+    ],
+    "east": [
+      30,
+      1,
+      13
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          2
+        ],
+        "max": [
+          2,
+          1,
+          2
+        ]
+      },
+      "block": "minecraft:cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          28
+        ],
+        "max": [
+          2,
+          1,
+          28
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          2
+        ],
+        "max": [
+          6,
+          1,
+          2
+        ]
+      },
+      "block": "minecraft:cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          28
+        ],
+        "max": [
+          6,
+          1,
+          28
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          10,
+          1,
+          2
+        ],
+        "max": [
+          10,
+          1,
+          2
+        ]
+      },
+      "block": "minecraft:cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          10,
+          1,
+          28
+        ],
+        "max": [
+          10,
+          1,
+          28
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          2
+        ],
+        "max": [
+          14,
+          1,
+          2
+        ]
+      },
+      "block": "minecraft:cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          28
+        ],
+        "max": [
+          14,
+          1,
+          28
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          18,
+          1,
+          2
+        ],
+        "max": [
+          18,
+          1,
+          2
+        ]
+      },
+      "block": "minecraft:cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          18,
+          1,
+          28
+        ],
+        "max": [
+          18,
+          1,
+          28
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          22,
+          1,
+          2
+        ],
+        "max": [
+          22,
+          1,
+          2
+        ]
+      },
+      "block": "minecraft:cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          22,
+          1,
+          28
+        ],
+        "max": [
+          22,
+          1,
+          28
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          26,
+          1,
+          2
+        ],
+        "max": [
+          26,
+          1,
+          2
+        ]
+      },
+      "block": "minecraft:cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          26,
+          1,
+          28
+        ],
+        "max": [
+          26,
+          1,
+          28
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          4
+        ],
+        "max": [
+          2,
+          1,
+          4
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          28,
+          1,
+          4
+        ],
+        "max": [
+          28,
+          1,
+          4
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          10
+        ],
+        "max": [
+          2,
+          1,
+          10
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          28,
+          1,
+          10
+        ],
+        "max": [
+          28,
+          1,
+          10
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          16
+        ],
+        "max": [
+          2,
+          1,
+          16
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          28,
+          1,
+          16
+        ],
+        "max": [
+          28,
+          1,
+          16
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          1,
+          22
+        ],
+        "max": [
+          2,
+          1,
+          22
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          28,
+          1,
+          22
+        ],
+        "max": [
+          28,
+          1,
+          22
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          1,
+          5
+        ],
+        "max": [
+          8,
+          1,
+          8
+        ]
+      },
+      "block": "minecraft:coarse_dirt"
+    },
+    {
+      "bounds": {
+        "min": [
+          22,
+          1,
+          21
+        ],
+        "max": [
+          25,
+          1,
+          24
+        ]
+      },
+      "block": "minecraft:rooted_dirt"
+    },
+    {
+      "bounds": {
+        "min": [
+          7,
+          2,
+          7
+        ],
+        "max": [
+          7,
+          3,
+          7
+        ]
+      },
+      "block": "minecraft:stripped_oak_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          24,
+          2,
+          23
+        ],
+        "max": [
+          24,
+          4,
+          23
+        ]
+      },
+      "block": "minecraft:stripped_oak_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          15,
+          1,
+          6
+        ],
+        "max": [
+          15,
+          1,
+          6
+        ]
+      },
+      "block": "minecraft:target"
+    },
+    {
+      "bounds": {
+        "min": [
+          17,
+          1,
+          24
+        ],
+        "max": [
+          17,
+          1,
+          24
+        ]
+      },
+      "block": "minecraft:hay_block"
+    }
+  ],
+  "seed": 20260914
+}

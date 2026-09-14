@@ -1,0 +1,245 @@
+{
+  "at": "2026-09-14T20:00:30.057Z",
+  "status": "PASS",
+  "style": "abandoned mining village: layered stone foundations, exposed timber frames, readable silhouettes, practical interiors, warm wayfinding light, restrained decay",
+  "buildings": [
+    {
+      "region": "village.gate",
+      "module": "village-gate",
+      "status": "ALREADY_RECONCILED",
+      "changedBlocks": 0,
+      "detailOperations": 8,
+      "texturePasses": [],
+      "detailPalette": [
+        "minecraft:stone_bricks",
+        "minecraft:mossy_cobblestone",
+        "minecraft:tuff_bricks",
+        "minecraft:stripped_spruce_log",
+        "minecraft:lantern",
+        "minecraft:coarse_dirt"
+      ],
+      "bounds": {
+        "min": [
+          100,
+          100,
+          118
+        ],
+        "max": [
+          114,
+          109,
+          132
+        ]
+      },
+      "checksum": "b91bbb17b8eb032e976095acf6f69f7b66ba45b68a8dccfd543b6fa5bc73c8b1"
+    },
+    {
+      "region": "village.square",
+      "module": "square",
+      "status": "ALREADY_RECONCILED",
+      "changedBlocks": 0,
+      "detailOperations": 28,
+      "texturePasses": [],
+      "detailPalette": [
+        "minecraft:cobblestone_wall",
+        "minecraft:mossy_cobblestone_wall",
+        "minecraft:lantern",
+        "minecraft:coarse_dirt",
+        "minecraft:rooted_dirt",
+        "minecraft:stripped_oak_log",
+        "minecraft:target",
+        "minecraft:hay_block"
+      ],
+      "bounds": {
+        "min": [
+          96,
+          100,
+          70
+        ],
+        "max": [
+          126,
+          104,
+          100
+        ]
+      },
+      "checksum": "13b59c532ccf25a0b8bec3cc42338a34f0bfdf7abdd7e89c51d45453a3c51fda"
+    },
+    {
+      "region": "village.survivor_house",
+      "module": "survivor-house",
+      "status": "ALREADY_RECONCILED",
+      "changedBlocks": 0,
+      "detailOperations": 34,
+      "texturePasses": [],
+      "detailPalette": [
+        "minecraft:mossy_cobblestone",
+        "minecraft:cobblestone",
+        "minecraft:stripped_spruce_log",
+        "minecraft:dark_oak_planks",
+        "minecraft:bookshelf",
+        "minecraft:dark_oak_slab",
+        "minecraft:crafting_table",
+        "minecraft:stone_brick_wall",
+        "minecraft:lantern",
+        "minecraft:spruce_slab",
+        "minecraft:gray_stained_glass",
+        "minecraft:cobweb"
+      ],
+      "bounds": {
+        "min": [
+          70,
+          100,
+          76
+        ],
+        "max": [
+          84,
+          114,
+          90
+        ]
+      },
+      "checksum": "4eb8c4138d0f8dc3bd60d2c36bf01df26c617fe62c97987c8a1bbc809d97b88e"
+    },
+    {
+      "region": "village.blacksmith",
+      "module": "blacksmith",
+      "status": "ALREADY_RECONCILED",
+      "changedBlocks": 0,
+      "detailOperations": 37,
+      "texturePasses": [],
+      "detailPalette": [
+        "minecraft:mossy_cobblestone",
+        "minecraft:cobblestone",
+        "minecraft:stripped_spruce_log",
+        "minecraft:dark_oak_planks",
+        "minecraft:bookshelf",
+        "minecraft:dark_oak_slab",
+        "minecraft:crafting_table",
+        "minecraft:polished_deepslate",
+        "minecraft:magma_block",
+        "minecraft:iron_bars",
+        "minecraft:anvil",
+        "minecraft:cobbled_deepslate",
+        "minecraft:lantern",
+        "minecraft:hay_block"
+      ],
+      "bounds": {
+        "min": [
+          132,
+          100,
+          76
+        ],
+        "max": [
+          146,
+          114,
+          90
+        ]
+      },
+      "checksum": "9a72dac0378f334108562db59efcc4e122aae6b4aa8c578a5dc8321fc6509f21"
+    },
+    {
+      "region": "village.church",
+      "module": "church",
+      "status": "ALREADY_RECONCILED",
+      "changedBlocks": 0,
+      "detailOperations": 46,
+      "texturePasses": [],
+      "detailPalette": [
+        "minecraft:mossy_cobblestone",
+        "minecraft:cobblestone",
+        "minecraft:stripped_spruce_log",
+        "minecraft:dark_oak_planks",
+        "minecraft:bookshelf",
+        "minecraft:dark_oak_slab",
+        "minecraft:crafting_table",
+        "minecraft:tuff_bricks",
+        "minecraft:mud_bricks",
+        "minecraft:dark_oak_stairs",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:soul_lantern",
+        "minecraft:purple_stained_glass",
+        "minecraft:stone_brick_wall",
+        "minecraft:sea_lantern",
+        "minecraft:cobweb"
+      ],
+      "bounds": {
+        "min": [
+          66,
+          100,
+          104
+        ],
+        "max": [
+          84,
+          119,
+          118
+        ]
+      },
+      "checksum": "a3f7abf1b78b04a67842e5e4d5143bd7f1657c369ccd89b5c77ba825d638644a"
+    },
+    {
+      "region": "mine.entrance",
+      "module": "mine-tunnel",
+      "status": "ALREADY_RECONCILED",
+      "changedBlocks": 0,
+      "detailOperations": 16,
+      "texturePasses": [],
+      "detailPalette": [
+        "minecraft:stripped_spruce_log",
+        "minecraft:gravel",
+        "minecraft:soul_lantern",
+        "minecraft:cobweb",
+        "minecraft:cobbled_deepslate"
+      ],
+      "bounds": {
+        "min": [
+          102,
+          100,
+          26
+        ],
+        "max": [
+          116,
+          109,
+          40
+        ]
+      },
+      "checksum": "0f0eb33f8fed4e33180f3b4052890b8edb673f53d2d8e1a5563de72576fbdf40"
+    },
+    {
+      "region": "mine.chamber",
+      "module": "boss-chamber",
+      "status": "ALREADY_RECONCILED",
+      "changedBlocks": 0,
+      "detailOperations": 24,
+      "texturePasses": [],
+      "detailPalette": [
+        "minecraft:polished_deepslate",
+        "minecraft:chiseled_deepslate",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:gilded_blackstone",
+        "minecraft:cracked_deepslate_bricks",
+        "minecraft:sea_lantern",
+        "minecraft:soul_lantern"
+      ],
+      "bounds": {
+        "min": [
+          98,
+          100,
+          2
+        ],
+        "max": [
+          120,
+          111,
+          24
+        ]
+      },
+      "checksum": "f6d3c2297937d962df90f5dbb2c735fc73b90c017cb17043257d14ee05afcf43"
+    }
+  ],
+  "checks": [
+    "7 playable locations received module-specific architectural detail",
+    "every final detail coordinate reconciled against the live Paper world",
+    "all edits used staged transactions, unchanged dry-runs and explicit preview hashes"
+  ],
+  "limitations": [
+    "Automated block reconciliation is complete; renderer screenshots and human visual review remain separate"
+  ],
+  "libraryChecksum": "118f03ec1c31652f0ade256318ebed314a9a8544609d8c4dba2ebcc80d2acd6a"
+}

@@ -1,0 +1,423 @@
+{
+  "id": "square",
+  "size": [
+    31,
+    2,
+    31
+  ],
+  "anchors": {
+    "north": [
+      14,
+      1,
+      0
+    ],
+    "south": [
+      11,
+      1,
+      30
+    ],
+    "west": [
+      0,
+      1,
+      13
+    ],
+    "east": [
+      30,
+      1,
+      13
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          30,
+          0,
+          30
+        ]
+      },
+      "block": "minecraft:cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          0,
+          2
+        ],
+        "max": [
+          2,
+          0,
+          2
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          0,
+          9
+        ],
+        "max": [
+          2,
+          0,
+          9
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          0,
+          16
+        ],
+        "max": [
+          2,
+          0,
+          16
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          0,
+          23
+        ],
+        "max": [
+          2,
+          0,
+          23
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          0,
+          30
+        ],
+        "max": [
+          2,
+          0,
+          30
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          9,
+          0,
+          2
+        ],
+        "max": [
+          9,
+          0,
+          2
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          9,
+          0,
+          9
+        ],
+        "max": [
+          9,
+          0,
+          9
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          9,
+          0,
+          16
+        ],
+        "max": [
+          9,
+          0,
+          16
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          9,
+          0,
+          23
+        ],
+        "max": [
+          9,
+          0,
+          23
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          9,
+          0,
+          30
+        ],
+        "max": [
+          9,
+          0,
+          30
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          16,
+          0,
+          2
+        ],
+        "max": [
+          16,
+          0,
+          2
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          16,
+          0,
+          9
+        ],
+        "max": [
+          16,
+          0,
+          9
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          16,
+          0,
+          16
+        ],
+        "max": [
+          16,
+          0,
+          16
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          16,
+          0,
+          23
+        ],
+        "max": [
+          16,
+          0,
+          23
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          16,
+          0,
+          30
+        ],
+        "max": [
+          16,
+          0,
+          30
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          23,
+          0,
+          2
+        ],
+        "max": [
+          23,
+          0,
+          2
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          23,
+          0,
+          9
+        ],
+        "max": [
+          23,
+          0,
+          9
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          23,
+          0,
+          16
+        ],
+        "max": [
+          23,
+          0,
+          16
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          23,
+          0,
+          23
+        ],
+        "max": [
+          23,
+          0,
+          23
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          23,
+          0,
+          30
+        ],
+        "max": [
+          23,
+          0,
+          30
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          30,
+          0,
+          2
+        ],
+        "max": [
+          30,
+          0,
+          2
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          30,
+          0,
+          9
+        ],
+        "max": [
+          30,
+          0,
+          9
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          30,
+          0,
+          16
+        ],
+        "max": [
+          30,
+          0,
+          16
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          30,
+          0,
+          23
+        ],
+        "max": [
+          30,
+          0,
+          23
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          30,
+          0,
+          30
+        ],
+        "max": [
+          30,
+          0,
+          30
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    }
+  ],
+  "seed": 20260914
+}

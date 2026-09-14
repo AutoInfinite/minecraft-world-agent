@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "style": "abandoned mining village: layered stone foundations, exposed timber frames, readable silhouettes, practical interiors, warm wayfinding light, restrained decay",
+  "id": "village-gate",
+  "size": [
+    15,
+    10,
+    15
+  ],
+  "anchors": {
+    "entrance": [
+      7,
+      1,
+      14
+    ],
+    "exit": [
+      7,
+      1,
+      0
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          6
+        ],
+        "max": [
+          2,
+          6,
+          8
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          12,
+          1,
+          6
+        ],
+        "max": [
+          14,
+          6,
+          8
+        ]
+      },
+      "block": "minecraft:mossy_cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          7,
+          7
+        ],
+        "max": [
+          12,
+          8,
+          7
+        ]
+      },
+      "block": "minecraft:tuff_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          1,
+          5
+        ],
+        "max": [
+          1,
+          5,
+          5
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          13,
+          1,
+          9
+        ],
+        "max": [
+          13,
+          5,
+          9
+        ]
+      },
+      "block": "minecraft:stripped_spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          6,
+          7
+        ],
+        "max": [
+          3,
+          6,
+          7
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          11,
+          6,
+          7
+        ],
+        "max": [
+          11,
+          6,
+          7
+        ]
+      },
+      "block": "minecraft:lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          1,
+          12
+        ],
+        "max": [
+          9,
+          1,
+          12
+        ]
+      },
+      "block": "minecraft:coarse_dirt"
+    }
+  ],
+  "seed": 20260914
+}

@@ -1,0 +1,398 @@
+{
+  "id": "church",
+  "size": [
+    15,
+    20,
+    19
+  ],
+  "anchors": {
+    "entrance": [
+      7,
+      1,
+      0
+    ],
+    "exit": [
+      7,
+      1,
+      18
+    ]
+  },
+  "fills": [
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          14,
+          7,
+          18
+        ]
+      },
+      "block": "minecraft:spruce_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          13,
+          6,
+          17
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          0
+        ],
+        "max": [
+          8,
+          3,
+          0
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          18
+        ],
+        "max": [
+          8,
+          3,
+          18
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          14,
+          0,
+          18
+        ]
+      },
+      "block": "minecraft:cobblestone"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          8,
+          0
+        ],
+        "max": [
+          14,
+          8,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          1,
+          9,
+          0
+        ],
+        "max": [
+          13,
+          9,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          10,
+          0
+        ],
+        "max": [
+          12,
+          10,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          3,
+          11,
+          0
+        ],
+        "max": [
+          11,
+          11,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          4,
+          12,
+          0
+        ],
+        "max": [
+          10,
+          12,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          13,
+          0
+        ],
+        "max": [
+          9,
+          13,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          14,
+          0
+        ],
+        "max": [
+          8,
+          14,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          7,
+          15,
+          0
+        ],
+        "max": [
+          7,
+          15,
+          18
+        ]
+      },
+      "block": "minecraft:dark_oak_planks"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          0
+        ],
+        "max": [
+          0,
+          7,
+          0
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          1,
+          18
+        ],
+        "max": [
+          0,
+          7,
+          18
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          0
+        ],
+        "max": [
+          14,
+          7,
+          0
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          1,
+          18
+        ],
+        "max": [
+          14,
+          7,
+          18
+        ]
+      },
+      "block": "minecraft:spruce_log"
+    },
+    {
+      "bounds": {
+        "min": [
+          0,
+          3,
+          3
+        ],
+        "max": [
+          0,
+          4,
+          15
+        ]
+      },
+      "block": "minecraft:glass"
+    },
+    {
+      "bounds": {
+        "min": [
+          14,
+          3,
+          3
+        ],
+        "max": [
+          14,
+          4,
+          15
+        ]
+      },
+      "block": "minecraft:glass"
+    },
+    {
+      "bounds": {
+        "min": [
+          2,
+          6,
+          2
+        ],
+        "max": [
+          2,
+          6,
+          2
+        ]
+      },
+      "block": "minecraft:sea_lantern"
+    },
+    {
+      "bounds": {
+        "min": [
+          5,
+          8,
+          7
+        ],
+        "max": [
+          9,
+          19,
+          11
+        ]
+      },
+      "block": "minecraft:stone_bricks"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          9,
+          8
+        ],
+        "max": [
+          8,
+          18,
+          10
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          9,
+          7
+        ],
+        "max": [
+          8,
+          11,
+          7
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          9,
+          11
+        ],
+        "max": [
+          8,
+          11,
+          11
+        ]
+      },
+      "block": "minecraft:air"
+    },
+    {
+      "bounds": {
+        "min": [
+          6,
+          1,
+          13
+        ],
+        "max": [
+          8,
+          2,
+          14
+        ]
+      },
+      "block": "minecraft:polished_andesite"
+    }
+  ],
+  "seed": 20260914
+}
